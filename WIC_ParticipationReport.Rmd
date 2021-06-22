@@ -1,0 +1,259 @@
+---
+title: "WIC Local Agency 7 Participation Report"
+layout: default
+tags: [R,leaflet,Jekyll, html, maps]
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+ 
+output: 
+  html_document:
+    keep_md: TRUE
+    preserve_yaml: TRUE
+---
+
+```{r, include=FALSE}
+rm(list=ls(all=TRUE))
+###############################################################################################
+theme_cpal <- function(base_size = 12, base_family = "sans") {
+  colors <- deframe(ggthemes::ggthemes_data[["fivethirtyeight"]])
+  (theme_foundation(base_size = base_size, base_family = base_family)
+    + theme(
+      line = element_line(colour = "#b4b4b4"),
+      rect = element_rect(fill = "#ffffff",
+                          linetype = 1, colour = NA),
+      text = element_text(family = "Roboto", face = "bold", colour = "#6c6c6c"),
+      axis.title = element_text(),
+      axis.title.x = element_text(vjust = 2),
+      axis.title.y = element_text(vjust = 2),
+      axis.text = element_text(color = "#b4b4b4"),
+      axis.ticks = element_blank(),
+      #axis.ticks.length = unit(6, "pt"),
+      axis.line = element_line(color = "#b4b4b4", size = 1.5, linetype = "solid"),
+      legend.background = element_rect(),
+      legend.position = "none",
+      legend.direction = "horizontal",
+      legend.box = "horizontal",
+      panel.grid.major = element_line(colour = "#e1e1e1"),
+      panel.grid.minor = element_blank(),
+      plot.title = element_text(hjust = 0, size = rel(1.5), face = "bold"),
+      plot.margin = unit(c(1, 3, 1, 1), "lines"),
+      panel.border = element_rect(size=1, fill = NA),
+      strip.background = element_rect()
+    ))
+}
+
+CPAL.colors = c("#008097", "#ec008c", "#eaca2d", "#b4b4b4", "#9bd9e3", "#fdddd7", "#55107E")
+CPAL.colors.Rev = c("#fdddd7", "#9bd9e3", "#b4b4b4", "#eaca2d", "#ec008c", "#008097")
+CPAL.colors.Rev.Lim = c("#eaca2d", "#ec008c", "#008097")
+###############################################################################################
+
+library(data.table)
+library(tidyverse)
+library(rio)
+library(ggthemes)
+library(directlabels)
+library(leaflet)
+library(sf)
+library(plotly)
+library(tigris)
+library(knitr)
+library(kableExtra)
+
+WIC_Participation <- import("data/WIC_ParticipationReports.csv") %>%
+  mutate(Fiscal_Month = factor(Month,
+                               levels = c(10:12, 1:9),
+                               labels = c(month.abb[10:12], month.abb[1:9])))
+
+WIC_LA7 <- WIC_Participation %>%
+  filter(Project == 7 & Year >= 2020)
+
+la7participation <- import("data/LA7_ParticipationReport_Complete.csv") %>%
+  janitor::clean_names() %>%
+  mutate(ClinicNo = site)
+
+dallas_sf <- counties(state = "TX") %>%
+  filter(GEOID == 48113)
+```
+
+## Participation Summary: Local Agency 7 (Dallas County)
+Between `r format(min(WIC_LA7$Date), "%B %Y")` and `r format(max(WIC_LA7$Date), "%B %Y")`, WIC participation in Local Agency 7 (Dallas County) changed from `r format(WIC_LA7$Total_Participants[which.min(WIC_LA7$Date)], big.mark = ",")` to `r format(WIC_LA7$Total_Participants[which.max(WIC_LA7$Date)], big.mark = ",")`, with a peak of `r format(max(WIC_LA7$Total_Participants), big.mark = ",")` participants in `r format(WIC_LA7$Date[which.max(WIC_LA7$Total_Participants)], "%B %Y")` a decline of `r format(round((WIC_LA7$Total_Participants[which.max(WIC_LA7$Date)]-WIC_LA7$Total_Participants[which.min(WIC_LA7$Date)])/WIC_LA7$Total_Participants[which.min(WIC_LA7$Date)]*100, digits = 2))`%.
+This year has seen a continuation of the downward trend in participation seen over the past five years, with participation levels reaching their five year low in `r format(WIC_LA7$Date[which.min(WIC_LA7$Total_Participants)], "%B %Y")`.
+
+```{r, fig.height=7, fig.width=9, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+WICmonth <- WIC_Participation %>%
+  filter(Project == 7) %>%
+  filter(Year >= 2019) %>%
+  ggplot(aes(x=Date, 
+             y=Total_Participants, 
+             )) +
+  geom_line(color = "#008097", size = 1.5) +
+  labs(title = "Local Agency 7 Participation by Month",
+       subtitle = "",
+       x = "",
+       y = "") +
+  scale_y_continuous(labels = scales::comma,
+                     breaks = scales::breaks_width(2500),
+                     limits = c(57500, 67500)) +
+  scale_x_date(expand = expansion(mult = c(0.05, 0.1)),
+               date_breaks = "1 year", date_minor_breaks = "6 months", date_labels = "%Y") +
+  theme_cpal() +
+  theme(legend.background = element_rect(),
+      legend.position = "bottom",
+      legend.direction = "horizontal",
+      legend.box = "horizontal")
+
+ggplotly(WICmonth, tooltip = "Total_Participants") %>%
+  layout(legend = list(
+    orientation = "h",
+    y = -0.1,
+    x = 0.2))
+```
+
+## Participation by Local Clinics
+
+```{r, include=FALSE}
+setwd("E:/CPAL Dropbox/") #Michael Desktop Directory
+#setwd("C:/Users/micha/CPAL Dropbox/") #Michael Laptop Directory
+clinics <- st_read("Basic Needs/02_Data/WIC Clinics/WIC Clinics.gdb", layer = "WIC_Clinics") %>%
+  st_transform(crs = 4326) %>%
+  left_join(la7participation) %>%
+  select(-(x17_oct:x19_dec))
+
+sumOld <- sum(clinics$x20_may, na.rm = TRUE)
+sumNew <- sum(clinics$x21_may, na.rm = TRUE)
+
+#sumNew <-  as.data.frame(clinics) %>%
+#  select (-Shape) %>%
+#  .[ , ncol(.), drop = FALSE] %>%
+#  sum(., na.rm = TRUE)
+
+sumRecent <- sum(clinics$x21_feb, na.rm = TRUE)
+
+clinics <- clinics %>%
+  mutate(perpart = round((x21_may/sumNew)*100, digits = 2),
+         perchange = round((x21_may-x20_may)/sumOld*100, digits = 2),
+         permonth = round((x21_may-x21_feb)/sumOld*100, digits = 2))
+```
+
+Overall clinic participation has remained stable with Irving, Lake June, and Ledbetter servicing 36% of all WIC recipients across Local Agency 7.
+In contrast despite its small size the WIC clinic in Carrollton has experience a 3% drop in participants in comparison to March 2020. This is the steepest drop among all Local Agency 7 clinics.
+
+```{r, fig.height=7, fig.width=9, echo=FALSE, message=FALSE, warning=FALSE}
+WIClocal <- clinics %>%
+  pivot_longer(x20_jan:x21_may, names_to = "Date", values_to = "Participation") %>%
+  mutate(Date = str_remove(Date, "x"),
+         Date = lubridate::ym(Date)) %>%
+  filter(Date == max(Date)) %>%
+  drop_na(Participation) %>%
+  ggplot(aes(x = reorder(site_name, Participation), 
+             y = Participation)) +
+  coord_flip() +
+  geom_bar(stat = "identity", fill = "#008097", color = "#008097") +
+  labs(title = "March 2021 Participation by Agency",
+       subtitle = "Local Agency 7",
+       x = "",
+       y = "") +
+  scale_y_continuous(labels = scales::comma) +
+  theme_cpal()
+
+ggplotly(WIClocal, tooltip = "Participation")
+```
+
+## Current Clinic Locations and Overall Participation
+```{r, fig.height=9, fig.width=9, echo=FALSE, message=FALSE, warning=FALSE}
+leaflet() %>%
+  setView(lng = -96.7970, lat = 32.7767, zoom = 11) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  addPolygons(data = dallas_sf,
+              fillOpacity = 0,
+              color = "#008097") %>%
+  addCircleMarkers(data = clinics,
+                   radius = ~perpart*2,
+                   stroke = FALSE,
+                   fillOpacity = 0.5,
+                   fillColor = "#008097",
+                   popup = paste0("<b>", "Clinic: ", "</b>", clinics$site_name, "<br>",
+                                 "<b>", "Total Participation: ", "</b>", clinics$mar_21, "<br>",
+                                 "<b>", "Percent Participation: ", "</b>", clinics$perpart, "%", "<br>",
+                                 "<b>", "YtY Change: ", "</b>", clinics$perchange, "%"))
+
+```
+
+```{r, echo=FALSE, results='asis'}
+as.data.frame(clinics) %>%
+  select(site_name, x21_may, perpart, perchange, permonth) %>%
+  drop_na(x21_may) %>%
+  kable(caption = "WIC Clinic Participation",
+        col.names = c("",
+                      "March 2021 Participation",
+                      "Percent of LA7 Participats",
+                      "Participation Change Prior Year",
+                      "Participation Change Prior Month")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+## Participation in Local Agency 7 relative to a year ago
+
+Local Agency 7 experienced a brief period between January 2020 and July 2020 where participation change increased relative to a year prior. This has since trended downwards and participation is once more declining relative to a year ago, albeit at smaller levels than previously seen.
+
+```{r, fig.height=7, fig.width=9, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+WICyear <- WIC_Participation %>%
+  filter(Project == 7) %>%
+  mutate(Participants_Diff = Total_Participants - lag(Total_Participants, order_by = Date, n = 12),
+         highlight = ifelse(Participants_Diff >= 0, "Gain", "Loss")) %>%
+  ggplot(aes(x = as.Date(factor(Date)), 
+             y = Participants_Diff,
+             fill = highlight)) +
+  geom_bar(stat = "identity") +
+  scale_fill_manual(values = c("#008097", "#ec008c")) +
+  labs(title = "Year to Year WIC Participation Change",
+       subtitle = "Local Agency 7",
+       x = "",
+       y = "Participation Change") + #color = "Year"
+  scale_y_continuous(labels = scales::comma) +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+  theme_cpal()
+
+ggplotly(WICyear, tooltip = "Participants_Diff")
+```
+
+## Local Agency 7 and other Urban Texas counties
+
+Many local agencies in geographies similar to Dallas experienced brief increases in WIC participation during the first half of 2020. Local Agency 1, 17, and 41 are the only agencies who have maintained an increased number of families within the program in March 2021 relative to a year prior. All other local agencies have return to pre-pandemic levels of participation.
+
+```{r, fig.height=7, fig.width=9, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+WICurban <- WIC_Participation %>%
+  mutate(highlight=ifelse(Project==7, "Dallas", 
+                          ifelse(Project %in% c(17, 26, 48), "Houston",
+                                 ifelse(Project == 1, "Austin", 
+                                        ifelse(Project == 41, "San Antonio", 
+                                               ifelse(Project == 54, "Ft. Worth", 
+                                                      ifelse(Project == 71, "McKinney",
+                                                             ifelse(Project == 0, "Texas", "Other")))))))) %>%
+  ggplot(aes(x=Date, y=Total_Participants, group = Project, color = highlight, size = highlight)) +
+  geom_line() +
+  scale_color_manual(values = c("#008097", "#ec008c", "#eaca2d", "#78290F", "#9bd9e3", "#b4b4b4", "#996fb1", "#FF7F11")) +
+  scale_size_manual(values = c(1, 1, 1, 1, 1, 1, 1, 1)) +
+  labs(title = "Monthly WIC Participation in Urban Texas Counties",
+       subtitle = "Between October 2015 through February 2021",
+       x = "",
+       y = "Average Participation") +
+  scale_y_continuous(labels = scales::comma) +
+  scale_x_date(expand = expansion(mult = c(0.05, 0.1)),
+               date_breaks = "1 year", date_labels = "%Y") +
+  theme_cpal() +
+  theme(legend.background = element_rect(),
+      legend.position = "bottom",
+      legend.direction = "horizontal",
+      legend.box = "horizontal")
+
+ggplotly(WICurban, tooltip = "Project") %>%
+  layout(legend = list(
+    orientation = "h",
+    y = -0.1,
+    x = 0))
+```
+
+
