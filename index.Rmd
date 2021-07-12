@@ -164,9 +164,14 @@ ggplotly(WIClocal, tooltip = "Participation")
 
 ## Overall Participation by Clinic {-}
 ```{r, fig.height=9, fig.width=9, echo=FALSE, message=FALSE, warning=FALSE}
+cpal_style <- "https://api.mapbox.com/styles/v1/owencpal/ckecb71jp22ct19qc1id28jku/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoib3dlbmNwYWwiLCJhIjoiY2tlYnR3emdxMGNhZzMwb2EzZWR4ajloNCJ9.P7Mujz8F3Rssq5-Q6dcvMw"
+
+map_attr <- "© <a href='https://www.mapbox.com/map-feedback/'>Mapbox</a> Basemap © <a href='https://childpovertyactionlab.org/'>Child Poverty Action Lab</a>"
+
 leaflet() %>%
   setView(lng = -96.7970, lat = 32.7767, zoom = 11) %>%
-  addProviderTiles(providers$CartoDB.Positron) %>%
+  addTiles(urlTemplate = cpal_style, attribution = map_attr) %>%
+  #  addProviderTiles(providers$CartoDB.Positron) %>%
   addPolygons(data = dallas_sf,
               fillOpacity = 0,
               color = "#008097") %>%
