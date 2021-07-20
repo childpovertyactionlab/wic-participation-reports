@@ -37,22 +37,43 @@ pre code {
   margin-bottom: 0.85em; /* adds same amount of margin as a <p> would */
 }
 
+/*------------- Prevent Title and Author from appearing in document ---------------- */
+.author,.title{
+    display: none;
+}
+
 /*------------- Body and header text---------------- */
 
 .book.font-family-1 {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1 {
   font-family: 'Roboto', serif;
-  color: #4f4f4f;
+  font-size: 3em !important;
+  color: #008097;
+  font-size: 18;
 }
 
+h2 {
+  font-family: 'Roboto', serif;
+  color: #4f4f4f;
+  font-size: 14;
+}
+
+h3, h4 {
+  font-family: 'Roboto', serif;
+  color: #4f4f4f;
+  font-size: 10;
+}
+
+/*
 .title {
   font-family: 'Roboto', serif;
   font-size: 3em !important;
   color: #008097;
  }
+*/
 
 .subtitle {
   font-family: 'Roboto', serif;
@@ -62,7 +83,7 @@ h1, h2, h3, h4 {
 /*--- LOGO ---*/
 
 .toc-logo {
-  width: 250px !important;
+  width: 200px !important;
   object-fit: contain;
   margin: 0 auto;
   display: block;

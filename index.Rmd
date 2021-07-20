@@ -1,19 +1,19 @@
 ---
-title: "WIC Local Agency 7 Participation Report"
-#author: "Child Poverty Action Lab"
+title:
+author:
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 #description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
-github-repo: childpovertyactionlab/tractmap
+github-repo: childpovertyactionlab/wic-participation-reports
 favicon: "images/favicon.ico"
 ---
 
-# WIC Local Agency North Texas {-}
+# LA7 WIC Participation Report {-}
 
-## Participation Summary Local Agency 7 {-}
+## LA7 Participation Summary {-}
 
 ```{r, include=FALSE}
 rm(list=ls(all=TRUE))
@@ -77,12 +77,19 @@ la7participation <- import("data/LA7_ParticipationReport_Complete.csv") %>%
 
 dallas_sf <- counties(state = "TX") %>%
   filter(GEOID == 48113)
+
+st_layers("C:/Users/micha/CPAL Dropbox/Basic Needs/04_Projects/WIC/WIC Eligibility/GIS/WIC_EligibilityEstimates.gpkg")
+
+wic_eligible_sf <- st_read("C:/Users/micha/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
+  st_transform(crs = 4269)
+
 ```
 
 Between `r format(min(WIC_LA7$Date), "%B %Y")` and `r format(max(WIC_LA7$Date), "%B %Y")`, WIC participation in Local Agency 7 (Dallas County) changed from `r format(WIC_LA7$Total_Participants[which.min(WIC_LA7$Date)], big.mark = ",")` to `r format(WIC_LA7$Total_Participants[which.max(WIC_LA7$Date)], big.mark = ",")`, with a peak of `r format(max(WIC_LA7$Total_Participants), big.mark = ",")` participants in `r format(WIC_LA7$Date[which.max(WIC_LA7$Total_Participants)], "%B %Y")` a decline of `r format(round((WIC_LA7$Total_Participants[which.max(WIC_LA7$Date)]-WIC_LA7$Total_Participants[which.min(WIC_LA7$Date)])/WIC_LA7$Total_Participants[which.min(WIC_LA7$Date)]*100, digits = 2))`%.
-This year has seen a continuation of the downward trend in participation seen over the past five years, with participation levels reaching their five year low in `r format(WIC_LA7$Date[which.min(WIC_LA7$Total_Participants)], "%B %Y")`.
 
-```{r, fig.height=7, fig.width=9, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+This year has seen a continuation of the downward trend in participation seen over the past five years, with participation levels reaching their five year low on `r format(WIC_LA7$Date[which.min(WIC_LA7$Total_Participants)], "%B %Y")`.
+
+```{r, fig.height=5, fig.width=7, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
 WICmonth <- WIC_Participation %>%
   filter(Project == 7) %>%
   filter(Year >= 2019) %>%
@@ -112,11 +119,12 @@ ggplotly(WICmonth, tooltip = "Total_Participants") %>%
     x = 0.2))
 ```
 
-## Participation by Local Clinics {-}
+## Current Participation by Clinic {-}
 
 ```{r, include=FALSE}
-setwd("E:/CPAL Dropbox/") #Michael Desktop Directory
-#setwd("C:/Users/micha/CPAL Dropbox/") #Michael Laptop Directory
+#setwd("E:/CPAL Dropbox/") #Michael Desktop Directory
+setwd("C:/Users/micha/CPAL Dropbox/") #Michael Laptop Directory
+
 clinics <- st_read("Basic Needs/02_Data/WIC Clinics/WIC Clinics.gdb", layer = "WIC_Clinics") %>%
   st_transform(crs = 4326) %>%
   left_join(la7participation) %>%
@@ -141,7 +149,7 @@ clinics <- clinics %>%
 Overall clinic participation has remained stable with Irving, Lake June, and Ledbetter servicing 36% of all WIC recipients across Local Agency 7.
 In contrast despite its small size the WIC clinic in Carrollton has experience a 3% drop in participants in comparison to March 2020. This is the steepest drop among all Local Agency 7 clinics.
 
-```{r, fig.height=7, fig.width=9, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, fig.height=5, fig.width=7, echo=FALSE, message=FALSE, warning=FALSE}
 WIClocal <- clinics %>%
   pivot_longer(x20_jan:x21_may, names_to = "Date", values_to = "Participation") %>%
   mutate(Date = str_remove(Date, "x"),
@@ -162,18 +170,28 @@ WIClocal <- clinics %>%
 ggplotly(WIClocal, tooltip = "Participation")
 ```
 
-## Overall Participation by Clinic {-}
-```{r, fig.height=9, fig.width=9, echo=FALSE, message=FALSE, warning=FALSE}
+## Clinic Map {-}
+```{r, fig.height=7, fig.width=7, echo=FALSE, message=FALSE, warning=FALSE}
 cpal_style <- "https://api.mapbox.com/styles/v1/owencpal/ckecb71jp22ct19qc1id28jku/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoib3dlbmNwYWwiLCJhIjoiY2tlYnR3emdxMGNhZzMwb2EzZWR4ajloNCJ9.P7Mujz8F3Rssq5-Q6dcvMw"
 
 map_attr <- "© <a href='https://www.mapbox.com/map-feedback/'>Mapbox</a> Basemap © <a href='https://childpovertyactionlab.org/'>Child Poverty Action Lab</a>"
 
+pal <- colorNumeric(
+  palette = "BuPu",
+  domain = wic_eligible_sf$WIC_ELIGI2)#,
+#  n=7)
+
 leaflet() %>%
-  setView(lng = -96.7970, lat = 32.7767, zoom = 11) %>%
+  setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_style, attribution = map_attr) %>%
-  #  addProviderTiles(providers$CartoDB.Positron) %>%
+  addPolygons(data = wic_eligible_sf,
+              fillOpacity = 0.8,
+              fillColor = ~pal(WIC_ELIGI2),
+              color = "#FFFFFF",
+              weight = 1) %>%
   addPolygons(data = dallas_sf,
               fillOpacity = 0,
+              weight = 5,
               color = "#008097") %>%
   addCircleMarkers(data = clinics,
                    radius = ~perpart*2,
@@ -203,7 +221,7 @@ as.data.frame(clinics) %>%
 
 Local Agency 7 experienced a brief period between January 2020 and July 2020 where participation change increased relative to a year prior. This has since trended downwards and participation is once more declining relative to a year ago, albeit at smaller levels than previously seen.
 
-```{r, fig.height=7, fig.width=9, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+```{r, fig.height=5, fig.width=7, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
 WICyear <- WIC_Participation %>%
   filter(Project == 7) %>%
   mutate(Participants_Diff = Total_Participants - lag(Total_Participants, order_by = Date, n = 12),
@@ -224,11 +242,11 @@ WICyear <- WIC_Participation %>%
 ggplotly(WICyear, tooltip = "Participants_Diff")
 ```
 
-## Participation Across Texas {-}
+## WIC Participation Across Texas {-}
 
 Many local agencies in geographies similar to Dallas experienced brief increases in WIC participation during the first half of 2020. Local Agency 1, 17, and 41 are the only agencies who have maintained an increased number of families within the program in March 2021 relative to a year prior. All other local agencies have return to pre-pandemic levels of participation.
 
-```{r, fig.height=7, fig.width=9, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
+```{r, fig.height=5, fig.width=7, fig.align='center', echo=FALSE, message=FALSE, warning=FALSE}
 WICurban <- WIC_Participation %>%
   mutate(highlight=ifelse(Project==7, "Dallas", 
                           ifelse(Project %in% c(17, 26, 48), "Houston",
