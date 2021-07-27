@@ -78,9 +78,9 @@ la7participation <- import("data/LA7_ParticipationReport.csv") %>%
 dallas_sf <- counties(state = "TX") %>%
   filter(GEOID == 48113)
 
-st_layers("E:/CPAL Dropbox/Basic Needs/04_Projects/WIC/WIC Eligibility/GIS/WIC_EligibilityEstimates.gpkg")
+st_layers("D:/CPAL Dropbox/Basic Needs/04_Projects/WIC/WIC Eligibility/GIS/WIC_EligibilityEstimates.gpkg")
 
-wic_eligible_sf <- st_read("E:/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
+wic_eligible_sf <- st_read("D:/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
   st_transform(crs = 4269)
 
 ```
@@ -122,7 +122,7 @@ ggplotly(WICmonth, tooltip = "Total_Participants") %>%
 ## Current Participation by Clinic {-}
 
 ```{r, include=FALSE}
-setwd("E:/CPAL Dropbox/") #Michael Desktop Directory
+setwd("D:/CPAL Dropbox/") #Michael Desktop Directory
 #setwd("C:/Users/micha/CPAL Dropbox/") #Michael Laptop Directory
 
 clinics <- st_read("Basic Needs/02_Data/WIC Clinics/WIC Clinics.gdb", layer = "WIC_Clinics") %>%
@@ -258,7 +258,7 @@ WICurban <- WIC_Participation %>%
   ggplot(aes(x=Date, y=Total_Participants, group = Project, color = highlight, size = highlight)) +
   geom_line() +
   scale_color_manual(values = c("#008097", "#ec008c", "#eaca2d", "#fdddd7", "#b4b4b4", "#9bd9e3", "#996fb1", "#FF7F11")) +
-  scale_size_manual(values = c(1, 1, 1, 1, 1, 1, 1, 1)) +
+  scale_size_manual(values = c(0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5)) +
   labs(title = "Monthly WIC Participation in Urban Texas Counties",
        subtitle = "Between October 2015 through May 2021",
        x = "",
