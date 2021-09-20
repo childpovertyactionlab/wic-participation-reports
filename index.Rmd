@@ -78,9 +78,9 @@ la7participation <- import("data/LA7_ParticipationReport.csv") %>%
 dallas_sf <- counties(state = "TX") %>%
   filter(GEOID == 48113)
 
-st_layers("D:/CPAL Dropbox/Basic Needs/04_Projects/WIC/WIC Eligibility/GIS/WIC_EligibilityEstimates.gpkg")
+st_layers("E:/CPAL Dropbox/Basic Needs/04_Projects/WIC/WIC Eligibility/GIS/WIC_EligibilityEstimates.gpkg")
 
-wic_eligible_sf <- st_read("D:/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
+wic_eligible_sf <- st_read("E:/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
   st_transform(crs = 4269)
 
 ```
@@ -122,7 +122,7 @@ ggplotly(WICmonth, tooltip = "Total_Participants") %>%
 ## Current Participation by Clinic {-}
 
 ```{r, include=FALSE}
-setwd("D:/CPAL Dropbox/") #Michael Desktop Directory
+setwd("E:/CPAL Dropbox/") #Michael Desktop Directory
 #setwd("C:/Users/micha/CPAL Dropbox/") #Michael Laptop Directory
 
 clinics <- st_read("Basic Needs/02_Data/WIC Clinics/WIC Clinics.gdb", layer = "WIC_Clinics") %>%
@@ -130,10 +130,12 @@ clinics <- st_read("Basic Needs/02_Data/WIC Clinics/WIC Clinics.gdb", layer = "W
   left_join(la7participation) %>%
   select(-(x17_oct:x19_dec)) %>%
   mutate(x21_apr = as.numeric(str_remove(x21_apr, ",")),
-         x21_may = as.numeric(str_remove(x21_may, ",")))
+         x21_may = as.numeric(str_remove(x21_may, ","))) %>%
+  rename(x21_jul = x7_21_2021,
+         x21_aug = x8_21_2021)
 
-sumOld <- sum(clinics$x20_jun, na.rm = TRUE)
-sumNew <- sum(clinics$x21_jun, na.rm = TRUE)
+sumOld <- sum(clinics$x20_aug, na.rm = TRUE)
+sumNew <- sum(clinics$x21_aug, na.rm = TRUE)
 
 #sumNew <-  as.data.frame(clinics) %>%
 #  select (-Shape) %>%
@@ -143,9 +145,9 @@ sumNew <- sum(clinics$x21_jun, na.rm = TRUE)
 sumRecent <- sum(clinics$x21_may, na.rm = TRUE)
 
 clinics <- clinics %>%
-  mutate(perpart = round((x21_jun/sumNew)*100, digits = 2),
-         perchange = round((x21_jun-x20_jun)/sumOld*100, digits = 2),
-         permonth = round((x21_jun-x21_may)/sumOld*100, digits = 2))
+  mutate(perpart = round((x21_aug/sumNew)*100, digits = 2),
+         perchange = round((x21_aug-x20_aug)/sumOld*100, digits = 2),
+         permonth = round((x21_aug-x21_jul)/sumOld*100, digits = 2))
 ```
 
 Overall clinic participation has remained stable with Irving, Lake June, and Ledbetter servicing 36% of all WIC recipients across Local Agency 7.
@@ -209,11 +211,11 @@ leaflet() %>%
 
 ```{r, echo=FALSE, results='asis'}
 as.data.frame(clinics) %>%
-  select(site_name, x21_jun, perpart, perchange) %>%
-  drop_na(x21_jun) %>%
+  select(site_name, x21_aug, perpart, perchange) %>%
+  drop_na(x21_aug) %>%
   kable(caption = "WIC Clinic Participation",
         col.names = c("",
-                      "June 2021 Participation",
+                      "August 2021 Participation",
                       "% of LA7 Participats",
                       "Change Prior Year")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", full_width = F, position = "left"))
