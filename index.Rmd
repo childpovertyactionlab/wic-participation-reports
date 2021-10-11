@@ -60,8 +60,7 @@ library(leaflet)
 library(sf)
 library(plotly)
 library(tigris)
-library(knitr)
-library(kableExtra)
+library(reactable)
 
 WIC_Participation <- import("data/WIC_ParticipationReports.csv") %>%
   mutate(Fiscal_Month = factor(Month,
@@ -112,7 +111,7 @@ WICmonth <- WIC_Participation %>%
       legend.direction = "horizontal",
       legend.box = "horizontal")
 
-ggplotly(WICmonth, tooltip = "Total_Participants") %>%
+ggplotly(WICmonth, tooltip = c("Date", "Total_Participants")) %>%
   layout(legend = list(
     orientation = "h",
     y = -0.1,
@@ -130,28 +129,24 @@ clinics <- st_read("Basic Needs/02_Data/WIC Clinics/WIC Clinics.gdb", layer = "W
   left_join(la7participation) %>%
   select(-(x17_oct:x19_dec)) %>%
   mutate(x21_apr = as.numeric(str_remove(x21_apr, ",")),
-         x21_may = as.numeric(str_remove(x21_may, ","))) %>%
-  rename(x21_jul = x7_21_2021,
-         x21_aug = x8_21_2021)
+         x21_may = as.numeric(str_remove(x21_may, ",")))
 
-sumOld <- sum(clinics$x20_aug, na.rm = TRUE)
-sumNew <- sum(clinics$x21_aug, na.rm = TRUE)
+sumOld <- sum(clinics$x20_sep, na.rm = TRUE)
+sumNew <- sum(clinics$x21_sep, na.rm = TRUE)
 
 #sumNew <-  as.data.frame(clinics) %>%
 #  select (-Shape) %>%
 #  .[ , ncol(.), drop = FALSE] %>%
 #  sum(., na.rm = TRUE)
 
-sumRecent <- sum(clinics$x21_may, na.rm = TRUE)
+sumRecent <- sum(clinics$x21_sep, na.rm = TRUE)
 
 clinics <- clinics %>%
-  mutate(perpart = round((x21_aug/sumNew)*100, digits = 2),
-         perchange = round((x21_aug-x20_aug)/sumOld*100, digits = 2),
-         permonth = round((x21_aug-x21_jul)/sumOld*100, digits = 2))
+  mutate(perpart = round((x21_sep/sumNew)*100, digits = 2),
+         perchange = round((x21_sep-x20_sep)/sumOld*100, digits = 2),
+         permonth = round((x21_sep-x21_aug)/sumOld*100, digits = 2))
 ```
 
-Overall clinic participation has remained stable with Irving, Lake June, and Ledbetter servicing 36% of all WIC recipients across Local Agency 7.
-In contrast despite its small size the WIC clinic in Carrollton has experience a 3% drop in participants in comparison to March 2020. This is the steepest drop among all Local Agency 7 clinics.
 
 ```{r, fig.height=5, fig.width=7, echo=FALSE, message=FALSE, warning=FALSE}
 WIClocal <- clinics %>%
@@ -164,7 +159,7 @@ WIClocal <- clinics %>%
              y = Participation)) +
   coord_flip() +
   geom_bar(stat = "identity", fill = "#008097", color = "#008097") +
-  labs(title = "June 2021 Participation by Agency",
+  labs(title = "September 2021 Participation by Agency",
        subtitle = "Local Agency 7",
        x = "",
        y = "") +
@@ -210,15 +205,32 @@ leaflet() %>%
 ```
 
 ```{r, echo=FALSE, results='asis'}
-as.data.frame(clinics) %>%
-  select(site_name, x21_aug, perpart, perchange) %>%
-  drop_na(x21_aug) %>%
-  kable(caption = "WIC Clinic Participation",
-        col.names = c("",
-                      "August 2021 Participation",
-                      "% of LA7 Participats",
-                      "Change Prior Year")) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", full_width = F, position = "left"))
+clinics %>%
+  st_drop_geometry(.) %>%
+  select(site_name, x21_sep, perpart, perchange, permonth) %>%
+  mutate(perpart = paste0(perpart, "%"),
+         perchange = paste0(perchange, "%"),
+         permonth = paste0(permonth, "%")) %>%
+  drop_na(x21_sep) %>%
+  reactable(., columns = list(
+    site_name = colDef(
+      name = "Clinic"),
+    x21_sep = colDef(
+      name = "September 2021 Participation"),
+    perpart = colDef(
+      name = "Overall Participation"),
+    perchange = colDef(
+      name = "Percent Change (Year)"),
+    permonth = colDef(
+      name = "Percent Change (Month)")),
+    theme = reactableTheme(
+      headerStyle = list(
+        "&:hover[aria-sort]" = list(background = "hsl(0, 0%, 96%)"),
+        "&[aria-sort='ascending'], &[aria-sort='descending']" = list(background = "hsl(0, 0%, 96%)"),
+        borderColor = "#555"
+        )
+      )
+    )
 ```
 ## LA7 Participation Over Time {-}
 
@@ -242,7 +254,7 @@ WICyear <- WIC_Participation %>%
   scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
   theme_cpal()
 
-ggplotly(WICyear, tooltip = "Participants_Diff")
+ggplotly(WICyear, tooltip = c("Participants_Diff"))
 ```
 
 ## WIC Participation Across Texas {-}
@@ -257,12 +269,15 @@ WICurban <- WIC_Participation %>%
                                         ifelse(Project == 41, "San Antonio", 
                                                ifelse(Project == 54, "Ft. Worth", 
                                                       ifelse(Project == 0, "Texas", "Other"))))))) %>%
-  ggplot(aes(x=Date, y=Total_Participants, group = Project, color = highlight, size = highlight)) +
+  filter(highlight != "Other") %>%
+  group_by(Date, highlight) %>%
+  mutate(Total_Participants = sum(Total_Participants)) %>%
+  ggplot(aes(x=Date, y=Total_Participants, color = highlight, size = highlight)) +
   geom_line() +
-  scale_color_manual(values = c("#008097", "#ec008c", "#eaca2d", "#fdddd7", "#b4b4b4", "#9bd9e3", "#996fb1", "#FF7F11")) +
+  scale_color_manual(values = c("#008097", "#e98816", "#eaca2d", "#ea8b98", "#b4b4b4", "#9bd9e3")) +
   scale_size_manual(values = c(0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5)) +
   labs(title = "Monthly WIC Participation in Urban Texas Counties",
-       subtitle = "Between October 2015 through May 2021",
+       subtitle = "Between October 2015 through August 2021",
        x = "",
        y = "Average Participation") +
   scale_y_continuous(labels = scales::comma) +
@@ -275,7 +290,7 @@ WICurban <- WIC_Participation %>%
       legend.direction = "horizontal",
       legend.box = "horizontal")
 
-ggplotly(WICurban, tooltip = "Project") %>%
+ggplotly(WICurban, tooltip = c("highlight", "Total_Participants")) %>%
   layout(legend = list(
     orientation = "h",
     y = -0.1,
