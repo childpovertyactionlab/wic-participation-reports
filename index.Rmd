@@ -79,8 +79,8 @@ dallas_sf <- counties(state = "TX") %>%
 
 #st_layers("E:/CPAL Dropbox/Basic Needs/04_Projects/WIC/WIC Eligibility/GIS/WIC_EligibilityEstimates.gpkg")
 
-#wic_eligible_sf <- st_read("E:/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
-wic_eligible_sf <- st_read("C:/Users/micha/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
+wic_eligible_sf <- st_read("E:/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
+#wic_eligible_sf <- st_read("C:/Users/micha/CPAL Dropbox/Basic Needs/02_Data/WIC Eligibility Estimates/WIC_Eligible_2018.shp") %>%
   st_transform(crs = 4269)
 
 ```
@@ -122,47 +122,42 @@ ggplotly(WICmonth, tooltip = c("Date", "Total_Participants")) %>%
 ## Current Participation by Clinic {-}
 
 ```{r, include=FALSE}
-#setwd("E:/CPAL Dropbox/") #Michael Desktop Directory
-setwd("C:/Users/micha/CPAL Dropbox/") #Michael Laptop Directory
+setwd("E:/CPAL Dropbox/") #Michael Desktop Directory
+#setwd("C:/Users/micha/CPAL Dropbox/") #Michael Laptop Directory
 
 clinics <- st_read("Basic Needs/02_Data/WIC Clinics/WIC Clinics.gdb", layer = "WIC_Clinics") %>%
   st_transform(crs = 4326) %>%
   left_join(la7participation) %>%
-  select(-(x17_oct:x19_dec)) %>%
-  mutate(x21_oct = as.numeric(str_remove(x21_oct, ",")),
-         x21_nov = as.numeric(str_remove(x21_nov, ",")))
+  select(-(october_01_2017:december_01_2019)) %>%
+  mutate(november_01_2021 = as.numeric(str_remove(november_01_2021, ",")),
+         december_01_2021 = as.numeric(str_remove(december_01_2021, ",")))
 
-sumOld <- sum(clinics$x20_nov, na.rm = TRUE)
-sumNew <- sum(clinics$x21_nov, na.rm = TRUE)
+sumOld <- sum(clinics$december_01_2020, na.rm = TRUE)
+sumNew <- sum(clinics$december_01_2021, na.rm = TRUE)
 
 #sumNew <-  as.data.frame(clinics) %>%
 #  select (-Shape) %>%
 #  .[ , ncol(.), drop = FALSE] %>%
 #  sum(., na.rm = TRUE)
 
-sumRecent <- sum(clinics$x21_nov, na.rm = TRUE)
+sumRecent <- sum(clinics$december_01_2021, na.rm = TRUE)
 
 clinics <- clinics %>%
-  mutate(perpart = round((x21_nov/sumNew)*100, digits = 2),
-         perchange = round((x21_nov-x20_nov)/sumOld*100, digits = 2),
-         permonth = round((x21_nov-x21_oct)/sumOld*100, digits = 2))
+  mutate(perpart = round((december_01_2021/sumNew)*100, digits = 2),
+         perchange = round((december_01_2021-december_01_2020)/sumOld*100, digits = 2),
+         permonth = round((december_01_2021-november_01_2021)/sumOld*100, digits = 2))
 ```
 
 
 ```{r, fig.height=5, fig.width=7, echo=FALSE, message=FALSE, warning=FALSE}
-#str(clinics)
+str(clinics)
 WIClocal <- clinics %>%
-  mutate(x21_apr = as.integer(x21_apr),
-         x21_may = as.integer(x21_may),
-         x21_jul = as.integer(x21_jul),
-         x21_aug = as.integer(x21_aug),
-         x21_sep = as.integer(x21_sep),
-         x21_oct = as.integer(x21_oct),
-         x21_nov = as.integer(x21_nov)
+  mutate(november_01_2021  = as.integer(november_01_2021 ),
+         december_01_2021  = as.integer(december_01_2021)
          ) %>%
-  pivot_longer(cols = starts_with("x2"), names_to = "Date", values_to = "Participation") %>%
-  mutate(Date = str_remove(Date, "x"),
-         Date = lubridate::ym(Date)) %>%
+  pivot_longer(cols = january_01_2020:december_01_2021, names_to = "Date", values_to = "Participation") %>%
+  mutate(Date = str_replace(Date, "_", "-"),
+         Date = lubridate::mdy(Date)) %>%
   filter(Date == max(Date)) %>%
   drop_na(Participation) %>%
   ggplot(aes(x = reorder(site_name, Participation), 
@@ -217,16 +212,16 @@ leaflet() %>%
 ```{r, echo=FALSE, results='asis'}
 clinics %>%
   st_drop_geometry(.) %>%
-  select(site_name, x21_sep, perpart, perchange, permonth) %>%
+  select(site_name, december_01_2021, perpart, perchange, permonth) %>%
   mutate(perpart = paste0(perpart, "%"),
          perchange = paste0(perchange, "%"),
          permonth = paste0(permonth, "%")) %>%
-  drop_na(x21_sep) %>%
+  drop_na(december_01_2021) %>%
   reactable(., columns = list(
     site_name = colDef(
       name = "Clinic"),
-    x21_sep = colDef(
-      name = "November 2021 Participation"),
+    december_01_2021 = colDef(
+      name = "December 2021 Participation"),
     perpart = colDef(
       name = "Overall Participation"),
     perchange = colDef(
