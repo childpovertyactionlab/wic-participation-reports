@@ -1,973 +1,991 @@
-site_name,date,participation,ClinicNo
-MLK Center,2017-10-01,2224,1
-MLK Center,2017-11-01,2127,1
-MLK Center,2017-12-01,2079,1
-MLK Center,2018-01-01,2095,1
-MLK Center,2018-02-01,2068,1
-MLK Center,2018-03-01,2031,1
-MLK Center,2018-04-01,2014,1
-MLK Center,2018-05-01,2033,1
-MLK Center,2018-06-01,2058,1
-MLK Center,2018-07-01,1974,1
-MLK Center,2018-08-01,1844,1
-MLK Center,2018-09-01,1820,1
-MLK Center,2018-10-01,1802,1
-MLK Center,2018-11-01,1723,1
-MLK Center,2018-12-01,1676,1
-MLK Center,2019-01-01,1598,1
-MLK Center,2019-02-01,1572,1
-MLK Center,2019-03-01,1549,1
-MLK Center,2019-04-01,1568,1
-MLK Center,2019-05-01,1586,1
-MLK Center,2019-06-01,1586,1
-MLK Center,2019-07-01,1616,1
-MLK Center,2019-08-01,1633,1
-MLK Center,2019-09-01,1641,1
-MLK Center,2019-10-01,1624,1
-MLK Center,2019-11-01,1575,1
-MLK Center,2019-12-01,1599,1
-MLK Center,2020-01-01,1630,1
-MLK Center,2020-02-01,1603,1
-MLK Center,2020-03-01,1487,1
-MLK Center,2020-04-01,1092,1
-MLK Center,2020-05-01,612,1
-MLK Center,2020-06-01,179,1
-MLK Center,2020-07-01,24,1
-MLK Center,2020-08-01,,1
-MLK Center,2020-09-01,,1
-MLK Center,2020-10-01,,1
-MLK Center,2020-11-01,,1
-MLK Center,2020-12-01,,1
-MLK Center,2021-01-01,,1
-MLK Center,2021-02-01,,1
-MLK Center,2021-03-01,,1
-MLK Center,2021-04-01,0,1
-MLK Center,2021-05-01,0,1
-MLK Center,2021-06-01,0,1
-MLK Center,2021-07-01,5,1
-MLK Center,2021-08-01,37,1
-MLK Center,2021-09-01,100,1
-MLK Center,2021-10-01,176,1
-MLK Center,2021-11-01,307,1
-MLK Center,2021-12-01,404,1
-MLK Center,2022-01-01,482,1
-MLK Center,2022-02-01,505,1
-MLK Center,2022-03-01,574,1
-Westmoreland,2017-10-01,4578,3
-Westmoreland,2017-11-01,4462,3
-Westmoreland,2017-12-01,4385,3
-Westmoreland,2018-01-01,4362,3
-Westmoreland,2018-02-01,4320,3
-Westmoreland,2018-03-01,4323,3
-Westmoreland,2018-04-01,4342,3
-Westmoreland,2018-05-01,4287,3
-Westmoreland,2018-06-01,4277,3
-Westmoreland,2018-07-01,4249,3
-Westmoreland,2018-08-01,4019,3
-Westmoreland,2018-09-01,3899,3
-Westmoreland,2018-10-01,3655,3
-Westmoreland,2018-11-01,3508,3
-Westmoreland,2018-12-01,3541,3
-Westmoreland,2019-01-01,3580,3
-Westmoreland,2019-02-01,3507,3
-Westmoreland,2019-03-01,3489,3
-Westmoreland,2019-04-01,3507,3
-Westmoreland,2019-05-01,3588,3
-Westmoreland,2019-06-01,3573,3
-Westmoreland,2019-07-01,3590,3
-Westmoreland,2019-08-01,3544,3
-Westmoreland,2019-09-01,3545,3
-Westmoreland,2019-10-01,3500,3
-Westmoreland,2019-11-01,3510,3
-Westmoreland,2019-12-01,3487,3
-Westmoreland,2020-01-01,3444,3
-Westmoreland,2020-02-01,3404,3
-Westmoreland,2020-03-01,3252,3
-Westmoreland,2020-04-01,2887,3
-Westmoreland,2020-05-01,2845,3
-Westmoreland,2020-06-01,3091,3
-Westmoreland,2020-07-01,3467,3
-Westmoreland,2020-08-01,3635,3
-Westmoreland,2020-09-01,3722,3
-Westmoreland,2020-10-01,3784,3
-Westmoreland,2020-11-01,3788,3
-Westmoreland,2020-12-01,3748,3
-Westmoreland,2021-01-01,3808,3
-Westmoreland,2021-02-01,3697,3
-Westmoreland,2021-03-01,3769,3
-Westmoreland,2021-04-01,3778,3
-Westmoreland,2021-05-01,3633,3
-Westmoreland,2021-06-01,3603,3
-Westmoreland,2021-07-01,3649,3
-Westmoreland,2021-08-01,3730,3
-Westmoreland,2021-09-01,3776,3
-Westmoreland,2021-10-01,3747,3
-Westmoreland,2021-11-01,3724,3
-Westmoreland,2021-12-01,3687,3
-Westmoreland,2022-01-01,3676,3
-Westmoreland,2022-02-01,3744,3
-Westmoreland,2022-03-01,3861,3
-Lake June,2017-10-01,8103,5
-Lake June,2017-11-01,7959,5
-Lake June,2017-12-01,7813,5
-Lake June,2018-01-01,7752,5
-Lake June,2018-02-01,7586,5
-Lake June,2018-03-01,7468,5
-Lake June,2018-04-01,7513,5
-Lake June,2018-05-01,7581,5
-Lake June,2018-06-01,7517,5
-Lake June,2018-07-01,7463,5
-Lake June,2018-08-01,7167,5
-Lake June,2018-09-01,6882,5
-Lake June,2018-10-01,6607,5
-Lake June,2018-11-01,6389,5
-Lake June,2018-12-01,6356,5
-Lake June,2019-01-01,6419,5
-Lake June,2019-02-01,6249,5
-Lake June,2019-03-01,6321,5
-Lake June,2019-04-01,6281,5
-Lake June,2019-05-01,6293,5
-Lake June,2019-06-01,6386,5
-Lake June,2019-07-01,6581,5
-Lake June,2019-08-01,6661,5
-Lake June,2019-09-01,6674,5
-Lake June,2019-10-01,6690,5
-Lake June,2019-11-01,6609,5
-Lake June,2019-12-01,6673,5
-Lake June,2020-01-01,6822,5
-Lake June,2020-02-01,6834,5
-Lake June,2020-03-01,6655,5
-Lake June,2020-04-01,6892,5
-Lake June,2020-05-01,7237,5
-Lake June,2020-06-01,7545,5
-Lake June,2020-07-01,7864,5
-Lake June,2020-08-01,7704,5
-Lake June,2020-09-01,7601,5
-Lake June,2020-10-01,7652,5
-Lake June,2020-11-01,7804,5
-Lake June,2020-12-01,7685,5
-Lake June,2021-01-01,7640,5
-Lake June,2021-02-01,7346,5
-Lake June,2021-03-01,7462,5
-Lake June,2021-04-01,7544,5
-Lake June,2021-05-01,7396,5
-Lake June,2021-06-01,7451,5
-Lake June,2021-07-01,7384,5
-Lake June,2021-08-01,7452,5
-Lake June,2021-09-01,7533,5
-Lake June,2021-10-01,7602,5
-Lake June,2021-11-01,7765,5
-Lake June,2021-12-01,7659,5
-Lake June,2022-01-01,7712,5
-Lake June,2022-02-01,7635,5
-Lake June,2022-03-01,7810,5
-Carrollton,2017-10-01,2890,7
-Carrollton,2017-11-01,2887,7
-Carrollton,2017-12-01,2837,7
-Carrollton,2018-01-01,2833,7
-Carrollton,2018-02-01,2793,7
-Carrollton,2018-03-01,2788,7
-Carrollton,2018-04-01,2794,7
-Carrollton,2018-05-01,2831,7
-Carrollton,2018-06-01,2818,7
-Carrollton,2018-07-01,2762,7
-Carrollton,2018-08-01,2701,7
-Carrollton,2018-09-01,2645,7
-Carrollton,2018-10-01,2517,7
-Carrollton,2018-11-01,2401,7
-Carrollton,2018-12-01,2372,7
-Carrollton,2019-01-01,2367,7
-Carrollton,2019-02-01,2356,7
-Carrollton,2019-03-01,2400,7
-Carrollton,2019-04-01,2410,7
-Carrollton,2019-05-01,2361,7
-Carrollton,2019-06-01,2360,7
-Carrollton,2019-07-01,2361,7
-Carrollton,2019-08-01,2367,7
-Carrollton,2019-09-01,2405,7
-Carrollton,2019-10-01,2386,7
-Carrollton,2019-11-01,2391,7
-Carrollton,2019-12-01,2418,7
-Carrollton,2020-01-01,2412,7
-Carrollton,2020-02-01,2407,7
-Carrollton,2020-03-01,2266,7
-Carrollton,2020-04-01,2025,7
-Carrollton,2020-05-01,1489,7
-Carrollton,2020-06-01,1256,7
-Carrollton,2020-07-01,1443,7
-Carrollton,2020-08-01,1571,7
-Carrollton,2020-09-01,1853,7
-Carrollton,2020-10-01,1894,7
-Carrollton,2020-11-01,1916,7
-Carrollton,2020-12-01,1800,7
-Carrollton,2021-01-01,1376,7
-Carrollton,2021-02-01,808,7
-Carrollton,2021-03-01,349,7
-Carrollton,2021-04-01,6,7
-Carrollton,2021-05-01,6,7
-Carrollton,2021-06-01,3,7
-Carrollton,2021-07-01,,7
-Carrollton,2021-08-01,,7
-Carrollton,2021-09-01,,7
-Carrollton,2021-10-01,,7
-Carrollton,2021-11-01,,7
-Carrollton,2021-12-01,,7
-Carrollton,2022-01-01,,7
-Carrollton,2022-02-01,,7
-Carrollton,2022-03-01,,7
-Grand Prairie,2017-10-01,4602,8
-Grand Prairie,2017-11-01,4526,8
-Grand Prairie,2017-12-01,4321,8
-Grand Prairie,2018-01-01,4358,8
-Grand Prairie,2018-02-01,4352,8
-Grand Prairie,2018-03-01,4347,8
-Grand Prairie,2018-04-01,4377,8
-Grand Prairie,2018-05-01,4394,8
-Grand Prairie,2018-06-01,4474,8
-Grand Prairie,2018-07-01,4335,8
-Grand Prairie,2018-08-01,4255,8
-Grand Prairie,2018-09-01,4095,8
-Grand Prairie,2018-10-01,4068,8
-Grand Prairie,2018-11-01,3926,8
-Grand Prairie,2018-12-01,3916,8
-Grand Prairie,2019-01-01,3875,8
-Grand Prairie,2019-02-01,3857,8
-Grand Prairie,2019-03-01,3942,8
-Grand Prairie,2019-04-01,3887,8
-Grand Prairie,2019-05-01,3939,8
-Grand Prairie,2019-06-01,3887,8
-Grand Prairie,2019-07-01,3928,8
-Grand Prairie,2019-08-01,3952,8
-Grand Prairie,2019-09-01,3962,8
-Grand Prairie,2019-10-01,4007,8
-Grand Prairie,2019-11-01,3953,8
-Grand Prairie,2019-12-01,3898,8
-Grand Prairie,2020-01-01,3965,8
-Grand Prairie,2020-02-01,3979,8
-Grand Prairie,2020-03-01,3918,8
-Grand Prairie,2020-04-01,4191,8
-Grand Prairie,2020-05-01,4344,8
-Grand Prairie,2020-06-01,4465,8
-Grand Prairie,2020-07-01,4202,8
-Grand Prairie,2020-08-01,3890,8
-Grand Prairie,2020-09-01,3900,8
-Grand Prairie,2020-10-01,3915,8
-Grand Prairie,2020-11-01,3864,8
-Grand Prairie,2020-12-01,3889,8
-Grand Prairie,2021-01-01,3780,8
-Grand Prairie,2021-02-01,3712,8
-Grand Prairie,2021-03-01,3745,8
-Grand Prairie,2021-04-01,3730,8
-Grand Prairie,2021-05-01,3672,8
-Grand Prairie,2021-06-01,3683,8
-Grand Prairie,2021-07-01,3693,8
-Grand Prairie,2021-08-01,3837,8
-Grand Prairie,2021-09-01,3873,8
-Grand Prairie,2021-10-01,3923,8
-Grand Prairie,2021-11-01,4035,8
-Grand Prairie,2021-12-01,4032,8
-Grand Prairie,2022-01-01,4042,8
-Grand Prairie,2022-02-01,4022,8
-Grand Prairie,2022-03-01,4110,8
-Irving,2017-10-01,7618,9
-Irving,2017-11-01,7557,9
-Irving,2017-12-01,7474,9
-Irving,2018-01-01,7496,9
-Irving,2018-02-01,7423,9
-Irving,2018-03-01,7344,9
-Irving,2018-04-01,7323,9
-Irving,2018-05-01,7385,9
-Irving,2018-06-01,7391,9
-Irving,2018-07-01,7248,9
-Irving,2018-08-01,6847,9
-Irving,2018-09-01,6583,9
-Irving,2018-10-01,6331,9
-Irving,2018-11-01,5985,9
-Irving,2018-12-01,6047,9
-Irving,2019-01-01,5995,9
-Irving,2019-02-01,6001,9
-Irving,2019-03-01,6098,9
-Irving,2019-04-01,6099,9
-Irving,2019-05-01,6191,9
-Irving,2019-06-01,6234,9
-Irving,2019-07-01,6277,9
-Irving,2019-08-01,6391,9
-Irving,2019-09-01,6306,9
-Irving,2019-10-01,6316,9
-Irving,2019-11-01,6297,9
-Irving,2019-12-01,6289,9
-Irving,2020-01-01,6339,9
-Irving,2020-02-01,6294,9
-Irving,2020-03-01,6035,9
-Irving,2020-04-01,5727,9
-Irving,2020-05-01,5404,9
-Irving,2020-06-01,5669,9
-Irving,2020-07-01,6101,9
-Irving,2020-08-01,6289,9
-Irving,2020-09-01,6261,9
-Irving,2020-10-01,6428,9
-Irving,2020-11-01,6517,9
-Irving,2020-12-01,6523,9
-Irving,2021-01-01,6605,9
-Irving,2021-02-01,6548,9
-Irving,2021-03-01,6756,9
-Irving,2021-04-01,6728,9
-Irving,2021-05-01,6555,9
-Irving,2021-06-01,6649,9
-Irving,2021-07-01,6814,9
-Irving,2021-08-01,7025,9
-Irving,2021-09-01,7240,9
-Irving,2021-10-01,7374,9
-Irving,2021-11-01,7568,9
-Irving,2021-12-01,7691,9
-Irving,2022-01-01,7932,9
-Irving,2022-02-01,7912,9
-Irving,2022-03-01,8014,9
-Lancaster Road,2017-10-01,3064,10
-Lancaster Road,2017-11-01,3006,10
-Lancaster Road,2017-12-01,2902,10
-Lancaster Road,2018-01-01,2916,10
-Lancaster Road,2018-02-01,2889,10
-Lancaster Road,2018-03-01,2889,10
-Lancaster Road,2018-04-01,2876,10
-Lancaster Road,2018-05-01,2860,10
-Lancaster Road,2018-06-01,2917,10
-Lancaster Road,2018-07-01,2905,10
-Lancaster Road,2018-08-01,2797,10
-Lancaster Road,2018-09-01,2712,10
-Lancaster Road,2018-10-01,2705,10
-Lancaster Road,2018-11-01,2624,10
-Lancaster Road,2018-12-01,2634,10
-Lancaster Road,2019-01-01,2621,10
-Lancaster Road,2019-02-01,2436,10
-Lancaster Road,2019-03-01,2309,10
-Lancaster Road,2019-04-01,2188,10
-Lancaster Road,2019-05-01,2140,10
-Lancaster Road,2019-06-01,2097,10
-Lancaster Road,2019-07-01,2100,10
-Lancaster Road,2019-08-01,2119,10
-Lancaster Road,2019-09-01,2013,10
-Lancaster Road,2019-10-01,1544,10
-Lancaster Road,2019-11-01,1262,10
-Lancaster Road,2019-12-01,1064,10
-Lancaster Road,2020-01-01,1121,10
-Lancaster Road,2020-02-01,1200,10
-Lancaster Road,2020-03-01,1143,10
-Lancaster Road,2020-04-01,1170,10
-Lancaster Road,2020-05-01,806,10
-Lancaster Road,2020-06-01,540,10
-Lancaster Road,2020-07-01,212,10
-Lancaster Road,2020-08-01,65,10
-Lancaster Road,2020-09-01,10,10
-Lancaster Road,2020-10-01,4,10
-Lancaster Road,2020-11-01,1,10
-Lancaster Road,2020-12-01,,10
-Lancaster Road,2021-01-01,,10
-Lancaster Road,2021-02-01,,10
-Lancaster Road,2021-03-01,,10
-Lancaster Road,2021-04-01,0,10
-Lancaster Road,2021-05-01,0,10
-Lancaster Road,2021-06-01,0,10
-Lancaster Road,2021-07-01,8,10
-Lancaster Road,2021-08-01,22,10
-Lancaster Road,2021-09-01,42,10
-Lancaster Road,2021-10-01,51,10
-Lancaster Road,2021-11-01,86,10
-Lancaster Road,2021-12-01,103,10
-Lancaster Road,2022-01-01,112,10
-Lancaster Road,2022-02-01,121,10
-Lancaster Road,2022-03-01,132,10
-East Garland,2017-10-01,4614,11
-East Garland,2017-11-01,4566,11
-East Garland,2017-12-01,4488,11
-East Garland,2018-01-01,4518,11
-East Garland,2018-02-01,4434,11
-East Garland,2018-03-01,4432,11
-East Garland,2018-04-01,4405,11
-East Garland,2018-05-01,4421,11
-East Garland,2018-06-01,4431,11
-East Garland,2018-07-01,4251,11
-East Garland,2018-08-01,4200,11
-East Garland,2018-09-01,4172,11
-East Garland,2018-10-01,4071,11
-East Garland,2018-11-01,3909,11
-East Garland,2018-12-01,3932,11
-East Garland,2019-01-01,3920,11
-East Garland,2019-02-01,3836,11
-East Garland,2019-03-01,3910,11
-East Garland,2019-04-01,3982,11
-East Garland,2019-05-01,4025,11
-East Garland,2019-06-01,4039,11
-East Garland,2019-07-01,4121,11
-East Garland,2019-08-01,4191,11
-East Garland,2019-09-01,4197,11
-East Garland,2019-10-01,4216,11
-East Garland,2019-11-01,4165,11
-East Garland,2019-12-01,4114,11
-East Garland,2020-01-01,4173,11
-East Garland,2020-02-01,4274,11
-East Garland,2020-03-01,4223,11
-East Garland,2020-04-01,4027,11
-East Garland,2020-05-01,3874,11
-East Garland,2020-06-01,3994,11
-East Garland,2020-07-01,4294,11
-East Garland,2020-08-01,4365,11
-East Garland,2020-09-01,4392,11
-East Garland,2020-10-01,4402,11
-East Garland,2020-11-01,4375,11
-East Garland,2020-12-01,4386,11
-East Garland,2021-01-01,4401,11
-East Garland,2021-02-01,4335,11
-East Garland,2021-03-01,4377,11
-East Garland,2021-04-01,4332,11
-East Garland,2021-05-01,4338,11
-East Garland,2021-06-01,4355,11
-East Garland,2021-07-01,4326,11
-East Garland,2021-08-01,4375,11
-East Garland,2021-09-01,4443,11
-East Garland,2021-10-01,4415,11
-East Garland,2021-11-01,4407,11
-East Garland,2021-12-01,4356,11
-East Garland,2022-01-01,4451,11
-East Garland,2022-02-01,4417,11
-East Garland,2022-03-01,4454,11
-Northwest Hwy,2017-10-01,3764,17
-Northwest Hwy,2017-11-01,3719,17
-Northwest Hwy,2017-12-01,3637,17
-Northwest Hwy,2018-01-01,3574,17
-Northwest Hwy,2018-02-01,3556,17
-Northwest Hwy,2018-03-01,3566,17
-Northwest Hwy,2018-04-01,3547,17
-Northwest Hwy,2018-05-01,3539,17
-Northwest Hwy,2018-06-01,3566,17
-Northwest Hwy,2018-07-01,3444,17
-Northwest Hwy,2018-08-01,3375,17
-Northwest Hwy,2018-09-01,3244,17
-Northwest Hwy,2018-10-01,3121,17
-Northwest Hwy,2018-11-01,2985,17
-Northwest Hwy,2018-12-01,2965,17
-Northwest Hwy,2019-01-01,2907,17
-Northwest Hwy,2019-02-01,2860,17
-Northwest Hwy,2019-03-01,2919,17
-Northwest Hwy,2019-04-01,2938,17
-Northwest Hwy,2019-05-01,2949,17
-Northwest Hwy,2019-06-01,2941,17
-Northwest Hwy,2019-07-01,2945,17
-Northwest Hwy,2019-08-01,2940,17
-Northwest Hwy,2019-09-01,2926,17
-Northwest Hwy,2019-10-01,2865,17
-Northwest Hwy,2019-11-01,2783,17
-Northwest Hwy,2019-12-01,2723,17
-Northwest Hwy,2020-01-01,2852,17
-Northwest Hwy,2020-02-01,2835,17
-Northwest Hwy,2020-03-01,2820,17
-Northwest Hwy,2020-04-01,2877,17
-Northwest Hwy,2020-05-01,3063,17
-Northwest Hwy,2020-06-01,3227,17
-Northwest Hwy,2020-07-01,3143,17
-Northwest Hwy,2020-08-01,3097,17
-Northwest Hwy,2020-09-01,2919,17
-Northwest Hwy,2020-10-01,2902,17
-Northwest Hwy,2020-11-01,2827,17
-Northwest Hwy,2020-12-01,2876,17
-Northwest Hwy,2021-01-01,2967,17
-Northwest Hwy,2021-02-01,3060,17
-Northwest Hwy,2021-03-01,3269,17
-Northwest Hwy,2021-04-01,3323,17
-Northwest Hwy,2021-05-01,3310,17
-Northwest Hwy,2021-06-01,3372,17
-Northwest Hwy,2021-07-01,3358,17
-Northwest Hwy,2021-08-01,3374,17
-Northwest Hwy,2021-09-01,3435,17
-Northwest Hwy,2021-10-01,3398,17
-Northwest Hwy,2021-11-01,3414,17
-Northwest Hwy,2021-12-01,3339,17
-Northwest Hwy,2022-01-01,3348,17
-Northwest Hwy,2022-02-01,3298,17
-Northwest Hwy,2022-03-01,3304,17
-North Dallas,2017-10-01,6057,24
-North Dallas,2017-11-01,6004,24
-North Dallas,2017-12-01,5867,24
-North Dallas,2018-01-01,5880,24
-North Dallas,2018-02-01,5797,24
-North Dallas,2018-03-01,5773,24
-North Dallas,2018-04-01,5686,24
-North Dallas,2018-05-01,5665,24
-North Dallas,2018-06-01,5557,24
-North Dallas,2018-07-01,5340,24
-North Dallas,2018-08-01,5294,24
-North Dallas,2018-09-01,5154,24
-North Dallas,2018-10-01,5002,24
-North Dallas,2018-11-01,4723,24
-North Dallas,2018-12-01,4734,24
-North Dallas,2019-01-01,4753,24
-North Dallas,2019-02-01,4768,24
-North Dallas,2019-03-01,4935,24
-North Dallas,2019-04-01,4930,24
-North Dallas,2019-05-01,4936,24
-North Dallas,2019-06-01,4957,24
-North Dallas,2019-07-01,5028,24
-North Dallas,2019-08-01,5100,24
-North Dallas,2019-09-01,5084,24
-North Dallas,2019-10-01,5106,24
-North Dallas,2019-11-01,5017,24
-North Dallas,2019-12-01,4999,24
-North Dallas,2020-01-01,5062,24
-North Dallas,2020-02-01,5037,24
-North Dallas,2020-03-01,5216,24
-North Dallas,2020-04-01,5508,24
-North Dallas,2020-05-01,5933,24
-North Dallas,2020-06-01,6030,24
-North Dallas,2020-07-01,5923,24
-North Dallas,2020-08-01,5554,24
-North Dallas,2020-09-01,5359,24
-North Dallas,2020-10-01,5373,24
-North Dallas,2020-11-01,5431,24
-North Dallas,2020-12-01,5487,24
-North Dallas,2021-01-01,5585,24
-North Dallas,2021-02-01,5664,24
-North Dallas,2021-03-01,5940,24
-North Dallas,2021-04-01,6047,24
-North Dallas,2021-05-01,5855,24
-North Dallas,2021-06-01,5876,24
-North Dallas,2021-07-01,5856,24
-North Dallas,2021-08-01,5916,24
-North Dallas,2021-09-01,6048,24
-North Dallas,2021-10-01,6035,24
-North Dallas,2021-11-01,5972,24
-North Dallas,2021-12-01,6016,24
-North Dallas,2022-01-01,6043,24
-North Dallas,2022-02-01,5967,24
-North Dallas,2022-03-01,6065,24
-Ledbetter,2017-10-01,7887,25
-Ledbetter,2017-11-01,7713,25
-Ledbetter,2017-12-01,7517,25
-Ledbetter,2018-01-01,7642,25
-Ledbetter,2018-02-01,7638,25
-Ledbetter,2018-03-01,7663,25
-Ledbetter,2018-04-01,7685,25
-Ledbetter,2018-05-01,7825,25
-Ledbetter,2018-06-01,7870,25
-Ledbetter,2018-07-01,7567,25
-Ledbetter,2018-08-01,7701,25
-Ledbetter,2018-09-01,7593,25
-Ledbetter,2018-10-01,7514,25
-Ledbetter,2018-11-01,7231,25
-Ledbetter,2018-12-01,7169,25
-Ledbetter,2019-01-01,7029,25
-Ledbetter,2019-02-01,6876,25
-Ledbetter,2019-03-01,6926,25
-Ledbetter,2019-04-01,6959,25
-Ledbetter,2019-05-01,6937,25
-Ledbetter,2019-06-01,7045,25
-Ledbetter,2019-07-01,7188,25
-Ledbetter,2019-08-01,7255,25
-Ledbetter,2019-09-01,7283,25
-Ledbetter,2019-10-01,7606,25
-Ledbetter,2019-11-01,7637,25
-Ledbetter,2019-12-01,7763,25
-Ledbetter,2020-01-01,7872,25
-Ledbetter,2020-02-01,7897,25
-Ledbetter,2020-03-01,8100,25
-Ledbetter,2020-04-01,8747,25
-Ledbetter,2020-05-01,9495,25
-Ledbetter,2020-06-01,9818,25
-Ledbetter,2020-07-01,9962,25
-Ledbetter,2020-08-01,9303,25
-Ledbetter,2020-09-01,8963,25
-Ledbetter,2020-10-01,8937,25
-Ledbetter,2020-11-01,8866,25
-Ledbetter,2020-12-01,8849,25
-Ledbetter,2021-01-01,8775,25
-Ledbetter,2021-02-01,8332,25
-Ledbetter,2021-03-01,8387,25
-Ledbetter,2021-04-01,8181,25
-Ledbetter,2021-05-01,7917,25
-Ledbetter,2021-06-01,7618,25
-Ledbetter,2021-07-01,7525,25
-Ledbetter,2021-08-01,7750,25
-Ledbetter,2021-09-01,7911,25
-Ledbetter,2021-10-01,7911,25
-Ledbetter,2021-11-01,7740,25
-Ledbetter,2021-12-01,7593,25
-Ledbetter,2022-01-01,7691,25
-Ledbetter,2022-02-01,7581,25
-Ledbetter,2022-03-01,7624,25
-John West/Buckner,2017-10-01,6616,26
-John West/Buckner,2017-11-01,6482,26
-John West/Buckner,2017-12-01,6339,26
-John West/Buckner,2018-01-01,6259,26
-John West/Buckner,2018-02-01,6191,26
-John West/Buckner,2018-03-01,6049,26
-John West/Buckner,2018-04-01,6033,26
-John West/Buckner,2018-05-01,6005,26
-John West/Buckner,2018-06-01,5952,26
-John West/Buckner,2018-07-01,5820,26
-John West/Buckner,2018-08-01,5506,26
-John West/Buckner,2018-09-01,5396,26
-John West/Buckner,2018-10-01,5099,26
-John West/Buckner,2018-11-01,4951,26
-John West/Buckner,2018-12-01,4942,26
-John West/Buckner,2019-01-01,4889,26
-John West/Buckner,2019-02-01,4741,26
-John West/Buckner,2019-03-01,4699,26
-John West/Buckner,2019-04-01,4685,26
-John West/Buckner,2019-05-01,4701,26
-John West/Buckner,2019-06-01,4698,26
-John West/Buckner,2019-07-01,4733,26
-John West/Buckner,2019-08-01,4755,26
-John West/Buckner,2019-09-01,4735,26
-John West/Buckner,2019-10-01,4687,26
-John West/Buckner,2019-11-01,4574,26
-John West/Buckner,2019-12-01,4475,26
-John West/Buckner,2020-01-01,4512,26
-John West/Buckner,2020-02-01,4520,26
-John West/Buckner,2020-03-01,4346,26
-John West/Buckner,2020-04-01,3928,26
-John West/Buckner,2020-05-01,3761,26
-John West/Buckner,2020-06-01,3952,26
-John West/Buckner,2020-07-01,4056,26
-John West/Buckner,2020-08-01,4195,26
-John West/Buckner,2020-09-01,4189,26
-John West/Buckner,2020-10-01,4214,26
-John West/Buckner,2020-11-01,4128,26
-John West/Buckner,2020-12-01,4101,26
-John West/Buckner,2021-01-01,4055,26
-John West/Buckner,2021-02-01,3846,26
-John West/Buckner,2021-03-01,3951,26
-John West/Buckner,2021-04-01,4008,26
-John West/Buckner,2021-05-01,4062,26
-John West/Buckner,2021-06-01,4077,26
-John West/Buckner,2021-07-01,4140,26
-John West/Buckner,2021-08-01,4217,26
-John West/Buckner,2021-09-01,4390,26
-John West/Buckner,2021-10-01,4406,26
-John West/Buckner,2021-11-01,4442,26
-John West/Buckner,2021-12-01,4471,26
-John West/Buckner,2022-01-01,4513,26
-John West/Buckner,2022-02-01,4454,26
-John West/Buckner,2022-03-01,4574,26
-Duncanville,2017-10-01,3466,30
-Duncanville,2017-11-01,3420,30
-Duncanville,2017-12-01,3384,30
-Duncanville,2018-01-01,3374,30
-Duncanville,2018-02-01,3316,30
-Duncanville,2018-03-01,3294,30
-Duncanville,2018-04-01,3337,30
-Duncanville,2018-05-01,3328,30
-Duncanville,2018-06-01,3274,30
-Duncanville,2018-07-01,3207,30
-Duncanville,2018-08-01,3071,30
-Duncanville,2018-09-01,2986,30
-Duncanville,2018-10-01,2879,30
-Duncanville,2018-11-01,2753,30
-Duncanville,2018-12-01,2751,30
-Duncanville,2019-01-01,2750,30
-Duncanville,2019-02-01,2607,30
-Duncanville,2019-03-01,2650,30
-Duncanville,2019-04-01,2667,30
-Duncanville,2019-05-01,2659,30
-Duncanville,2019-06-01,2725,30
-Duncanville,2019-07-01,2814,30
-Duncanville,2019-08-01,2818,30
-Duncanville,2019-09-01,2860,30
-Duncanville,2019-10-01,2924,30
-Duncanville,2019-11-01,2924,30
-Duncanville,2019-12-01,2936,30
-Duncanville,2020-01-01,3050,30
-Duncanville,2020-02-01,3036,30
-Duncanville,2020-03-01,3106,30
-Duncanville,2020-04-01,2915,30
-Duncanville,2020-05-01,2552,30
-Duncanville,2020-06-01,2480,30
-Duncanville,2020-07-01,2518,30
-Duncanville,2020-08-01,2512,30
-Duncanville,2020-09-01,2501,30
-Duncanville,2020-10-01,2440,30
-Duncanville,2020-11-01,2456,30
-Duncanville,2020-12-01,2480,30
-Duncanville,2021-01-01,2439,30
-Duncanville,2021-02-01,2371,30
-Duncanville,2021-03-01,2384,30
-Duncanville,2021-04-01,2304,30
-Duncanville,2021-05-01,2298,30
-Duncanville,2021-06-01,2361,30
-Duncanville,2021-07-01,2310,30
-Duncanville,2021-08-01,2470,30
-Duncanville,2021-09-01,2599,30
-Duncanville,2021-10-01,2582,30
-Duncanville,2021-11-01,2642,30
-Duncanville,2021-12-01,2678,30
-Duncanville,2022-01-01,2697,30
-Duncanville,2022-02-01,2621,30
-Duncanville,2022-03-01,2670,30
-West Garland,2017-10-01,5409,32
-West Garland,2017-11-01,5323,32
-West Garland,2017-12-01,5225,32
-West Garland,2018-01-01,5157,32
-West Garland,2018-02-01,5165,32
-West Garland,2018-03-01,5091,32
-West Garland,2018-04-01,5038,32
-West Garland,2018-05-01,5003,32
-West Garland,2018-06-01,4923,32
-West Garland,2018-07-01,4877,32
-West Garland,2018-08-01,4661,32
-West Garland,2018-09-01,4456,32
-West Garland,2018-10-01,4346,32
-West Garland,2018-11-01,4151,32
-West Garland,2018-12-01,4164,32
-West Garland,2019-01-01,4157,32
-West Garland,2019-02-01,4064,32
-West Garland,2019-03-01,4124,32
-West Garland,2019-04-01,4143,32
-West Garland,2019-05-01,4097,32
-West Garland,2019-06-01,4058,32
-West Garland,2019-07-01,4087,32
-West Garland,2019-08-01,4144,32
-West Garland,2019-09-01,4134,32
-West Garland,2019-10-01,4119,32
-West Garland,2019-11-01,4080,32
-West Garland,2019-12-01,4066,32
-West Garland,2020-01-01,4074,32
-West Garland,2020-02-01,4080,32
-West Garland,2020-03-01,3981,32
-West Garland,2020-04-01,4157,32
-West Garland,2020-05-01,4504,32
-West Garland,2020-06-01,4592,32
-West Garland,2020-07-01,4772,32
-West Garland,2020-08-01,4658,32
-West Garland,2020-09-01,4546,32
-West Garland,2020-10-01,4612,32
-West Garland,2020-11-01,4571,32
-West Garland,2020-12-01,4473,32
-West Garland,2021-01-01,4337,32
-West Garland,2021-02-01,4254,32
-West Garland,2021-03-01,4291,32
-West Garland,2021-04-01,4183,32
-West Garland,2021-05-01,4095,32
-West Garland,2021-06-01,4112,32
-West Garland,2021-07-01,3999,32
-West Garland,2021-08-01,4075,32
-West Garland,2021-09-01,4215,32
-West Garland,2021-10-01,4276,32
-West Garland,2021-11-01,4353,32
-West Garland,2021-12-01,4404,32
-West Garland,2022-01-01,4540,32
-West Garland,2022-02-01,4562,32
-West Garland,2022-03-01,4641,32
-Stemmons Clinic,2017-10-01,57,34
-Stemmons Clinic,2017-11-01,18,34
-Stemmons Clinic,2017-12-01,1,34
-Stemmons Clinic,2018-01-01,,34
-Stemmons Clinic,2018-02-01,,34
-Stemmons Clinic,2018-03-01,,34
-Stemmons Clinic,2018-04-01,,34
-Stemmons Clinic,2018-05-01,,34
-Stemmons Clinic,2018-06-01,,34
-Stemmons Clinic,2018-07-01,,34
-Stemmons Clinic,2018-08-01,5,34
-Stemmons Clinic,2018-09-01,2,34
-Stemmons Clinic,2018-10-01,7,34
-Stemmons Clinic,2018-11-01,8,34
-Stemmons Clinic,2018-12-01,7,34
-Stemmons Clinic,2019-01-01,,34
-Stemmons Clinic,2019-02-01,1,34
-Stemmons Clinic,2019-03-01,2,34
-Stemmons Clinic,2019-04-01,1,34
-Stemmons Clinic,2019-05-01,,34
-Stemmons Clinic,2019-06-01,,34
-Stemmons Clinic,2019-07-01,,34
-Stemmons Clinic,2019-08-01,,34
-Stemmons Clinic,2019-09-01,,34
-Stemmons Clinic,2019-10-01,,34
-Stemmons Clinic,2019-11-01,,34
-Stemmons Clinic,2019-12-01,,34
-Stemmons Clinic,2020-01-01,,34
-Stemmons Clinic,2020-02-01,,34
-Stemmons Clinic,2020-03-01,,34
-Stemmons Clinic,2020-04-01,,34
-Stemmons Clinic,2020-05-01,,34
-Stemmons Clinic,2020-06-01,,34
-Stemmons Clinic,2020-07-01,,34
-Stemmons Clinic,2020-08-01,,34
-Stemmons Clinic,2020-09-01,,34
-Stemmons Clinic,2020-10-01,,34
-Stemmons Clinic,2020-11-01,,34
-Stemmons Clinic,2020-12-01,,34
-Stemmons Clinic,2021-01-01,,34
-Stemmons Clinic,2021-02-01,,34
-Stemmons Clinic,2021-03-01,,34
-Stemmons Clinic,2021-04-01,,34
-Stemmons Clinic,2021-05-01,,34
-Stemmons Clinic,2021-06-01,,34
-Stemmons Clinic,2021-07-01,,34
-Stemmons Clinic,2021-08-01,,34
-Stemmons Clinic,2021-09-01,,34
-Stemmons Clinic,2021-10-01,,34
-Stemmons Clinic,2021-11-01,,34
-Stemmons Clinic,2021-12-01,,34
-Stemmons Clinic,2022-01-01,,34
-Stemmons Clinic,2022-02-01,,34
-Stemmons Clinic,2022-03-01,,34
-Abrams Road,2017-10-01,4371,37
-Abrams Road,2017-11-01,4360,37
-Abrams Road,2017-12-01,4274,37
-Abrams Road,2018-01-01,4266,37
-Abrams Road,2018-02-01,4186,37
-Abrams Road,2018-03-01,4186,37
-Abrams Road,2018-04-01,4136,37
-Abrams Road,2018-05-01,4148,37
-Abrams Road,2018-06-01,4137,37
-Abrams Road,2018-07-01,3968,37
-Abrams Road,2018-08-01,3951,37
-Abrams Road,2018-09-01,3888,37
-Abrams Road,2018-10-01,3833,37
-Abrams Road,2018-11-01,3648,37
-Abrams Road,2018-12-01,3633,37
-Abrams Road,2019-01-01,3594,37
-Abrams Road,2019-02-01,3474,37
-Abrams Road,2019-03-01,3562,37
-Abrams Road,2019-04-01,3636,37
-Abrams Road,2019-05-01,3594,37
-Abrams Road,2019-06-01,3543,37
-Abrams Road,2019-07-01,3574,37
-Abrams Road,2019-08-01,3617,37
-Abrams Road,2019-09-01,3659,37
-Abrams Road,2019-10-01,3633,37
-Abrams Road,2019-11-01,3641,37
-Abrams Road,2019-12-01,3617,37
-Abrams Road,2020-01-01,3687,37
-Abrams Road,2020-02-01,3616,37
-Abrams Road,2020-03-01,3485,37
-Abrams Road,2020-04-01,3455,37
-Abrams Road,2020-05-01,3607,37
-Abrams Road,2020-06-01,3663,37
-Abrams Road,2020-07-01,3881,37
-Abrams Road,2020-08-01,3707,37
-Abrams Road,2020-09-01,3707,37
-Abrams Road,2020-10-01,3765,37
-Abrams Road,2020-11-01,3758,37
-Abrams Road,2020-12-01,3758,37
-Abrams Road,2021-01-01,3739,37
-Abrams Road,2021-02-01,3593,37
-Abrams Road,2021-03-01,3653,37
-Abrams Road,2021-04-01,3593,37
-Abrams Road,2021-05-01,3535,37
-Abrams Road,2021-06-01,3578,37
-Abrams Road,2021-07-01,3635,37
-Abrams Road,2021-08-01,3699,37
-Abrams Road,2021-09-01,3733,37
-Abrams Road,2021-10-01,3736,37
-Abrams Road,2021-11-01,3818,37
-Abrams Road,2021-12-01,3785,37
-Abrams Road,2022-01-01,3769,37
-Abrams Road,2022-02-01,3757,37
-Abrams Road,2022-03-01,3870,37
-Mesquite,2017-10-01,3921,39
-Mesquite,2017-11-01,3910,39
-Mesquite,2017-12-01,3862,39
-Mesquite,2018-01-01,3920,39
-Mesquite,2018-02-01,3858,39
-Mesquite,2018-03-01,3860,39
-Mesquite,2018-04-01,3859,39
-Mesquite,2018-05-01,3871,39
-Mesquite,2018-06-01,3902,39
-Mesquite,2018-07-01,3749,39
-Mesquite,2018-08-01,3671,39
-Mesquite,2018-09-01,3643,39
-Mesquite,2018-10-01,3551,39
-Mesquite,2018-11-01,3397,39
-Mesquite,2018-12-01,3450,39
-Mesquite,2019-01-01,3454,39
-Mesquite,2019-02-01,3400,39
-Mesquite,2019-03-01,3453,39
-Mesquite,2019-04-01,3459,39
-Mesquite,2019-05-01,3434,39
-Mesquite,2019-06-01,3475,39
-Mesquite,2019-07-01,3515,39
-Mesquite,2019-08-01,3570,39
-Mesquite,2019-09-01,3624,39
-Mesquite,2019-10-01,3688,39
-Mesquite,2019-11-01,3723,39
-Mesquite,2019-12-01,3672,39
-Mesquite,2020-01-01,3718,39
-Mesquite,2020-02-01,3689,39
-Mesquite,2020-03-01,3490,39
-Mesquite,2020-04-01,3077,39
-Mesquite,2020-05-01,2786,39
-Mesquite,2020-06-01,2766,39
-Mesquite,2020-07-01,2874,39
-Mesquite,2020-08-01,3062,39
-Mesquite,2020-09-01,3004,39
-Mesquite,2020-10-01,3074,39
-Mesquite,2020-11-01,3102,39
-Mesquite,2020-12-01,3071,39
-Mesquite,2021-01-01,3051,39
-Mesquite,2021-02-01,2934,39
-Mesquite,2021-03-01,2952,39
-Mesquite,2021-04-01,2964,39
-Mesquite,2021-05-01,3024,39
-Mesquite,2021-06-01,3020,39
-Mesquite,2021-07-01,3054,39
-Mesquite,2021-08-01,3186,39
-Mesquite,2021-09-01,3325,39
-Mesquite,2021-10-01,3285,39
-Mesquite,2021-11-01,3350,39
-Mesquite,2021-12-01,3409,39
-Mesquite,2022-01-01,3505,39
-Mesquite,2022-02-01,3404,39
-Mesquite,2022-03-01,3467,39
-Medical District,2017-10-01,,34
-Medical District,2017-11-01,,34
-Medical District,2017-12-01,,34
-Medical District,2018-01-01,,34
-Medical District,2018-02-01,,34
-Medical District,2018-03-01,,34
-Medical District,2018-04-01,,34
-Medical District,2018-05-01,,34
-Medical District,2018-06-01,,34
-Medical District,2018-07-01,,34
-Medical District,2018-08-01,,34
-Medical District,2018-09-01,,34
-Medical District,2018-10-01,,34
-Medical District,2018-11-01,,34
-Medical District,2018-12-01,,34
-Medical District,2019-01-01,,34
-Medical District,2019-02-01,,34
-Medical District,2019-03-01,,34
-Medical District,2019-04-01,,34
-Medical District,2019-05-01,,34
-Medical District,2019-06-01,,34
-Medical District,2019-07-01,,34
-Medical District,2019-08-01,,34
-Medical District,2019-09-01,,34
-Medical District,2019-10-01,,34
-Medical District,2019-11-01,,34
-Medical District,2019-12-01,,34
-Medical District,2020-01-01,,34
-Medical District,2020-02-01,,34
-Medical District,2020-03-01,291,34
-Medical District,2020-04-01,859,34
-Medical District,2020-05-01,978,34
-Medical District,2020-06-01,979,34
-Medical District,2020-07-01,511,34
-Medical District,2020-08-01,330,34
-Medical District,2020-09-01,233,34
-Medical District,2020-10-01,241,34
-Medical District,2020-11-01,270,34
-Medical District,2020-12-01,325,34
-Medical District,2021-01-01,310,34
-Medical District,2021-02-01,289,34
-Medical District,2021-03-01,264,34
-Medical District,2021-04-01,284,34
-Medical District,2021-05-01,305,34
-Medical District,2021-06-01,340,34
-Medical District,2021-07-01,345,34
-Medical District,2021-08-01,354,34
-Medical District,2021-09-01,347,34
-Medical District,2021-10-01,302,34
-Medical District,2021-11-01,297,34
-Medical District,2021-12-01,280,34
-Medical District,2022-01-01,200,34
-Medical District,2022-02-01,176,34
-Medical District,2022-03-01,181,34
+site,site_name,date,participation
+1,MLK Center,2017-10-01,2224
+1,MLK Center,2017-11-01,2127
+1,MLK Center,2017-12-01,2079
+1,MLK Center,2018-01-01,2095
+1,MLK Center,2018-02-01,2068
+1,MLK Center,2018-03-01,2031
+1,MLK Center,2018-04-01,2014
+1,MLK Center,2018-05-01,2033
+1,MLK Center,2018-06-01,2058
+1,MLK Center,2018-07-01,1974
+1,MLK Center,2018-08-01,1844
+1,MLK Center,2018-09-01,1820
+1,MLK Center,2018-10-01,1802
+1,MLK Center,2018-11-01,1723
+1,MLK Center,2018-12-01,1676
+1,MLK Center,2019-01-01,1598
+1,MLK Center,2019-02-01,1572
+1,MLK Center,2019-03-01,1549
+1,MLK Center,2019-04-01,1568
+1,MLK Center,2019-05-01,1586
+1,MLK Center,2019-06-01,1586
+1,MLK Center,2019-07-01,1616
+1,MLK Center,2019-08-01,1633
+1,MLK Center,2019-09-01,1641
+1,MLK Center,2019-10-01,1624
+1,MLK Center,2019-11-01,1575
+1,MLK Center,2019-12-01,1599
+1,MLK Center,2020-01-01,1630
+1,MLK Center,2020-02-01,1603
+1,MLK Center,2020-03-01,1487
+1,MLK Center,2020-04-01,1092
+1,MLK Center,2020-05-01,612
+1,MLK Center,2020-06-01,179
+1,MLK Center,2020-07-01,24
+1,MLK Center,2020-08-01,
+1,MLK Center,2020-09-01,
+1,MLK Center,2020-10-01,
+1,MLK Center,2020-11-01,
+1,MLK Center,2020-12-01,
+1,MLK Center,2021-01-01,
+1,MLK Center,2021-02-01,
+1,MLK Center,2021-03-01,
+1,MLK Center,2021-04-01,0
+1,MLK Center,2021-05-01,0
+1,MLK Center,2021-06-01,0
+1,MLK Center,2021-07-01,5
+1,MLK Center,2021-08-01,37
+1,MLK Center,2021-09-01,100
+1,MLK Center,2021-10-01,176
+1,MLK Center,2021-11-01,307
+1,MLK Center,2021-12-01,404
+1,MLK Center,2022-01-01,482
+1,MLK Center,2022-02-01,505
+1,MLK Center,2022-03-01,574
+1,MLK Center,2022-04-01,614
+3,Westmoreland,2017-10-01,4578
+3,Westmoreland,2017-11-01,4462
+3,Westmoreland,2017-12-01,4385
+3,Westmoreland,2018-01-01,4362
+3,Westmoreland,2018-02-01,4320
+3,Westmoreland,2018-03-01,4323
+3,Westmoreland,2018-04-01,4342
+3,Westmoreland,2018-05-01,4287
+3,Westmoreland,2018-06-01,4277
+3,Westmoreland,2018-07-01,4249
+3,Westmoreland,2018-08-01,4019
+3,Westmoreland,2018-09-01,3899
+3,Westmoreland,2018-10-01,3655
+3,Westmoreland,2018-11-01,3508
+3,Westmoreland,2018-12-01,3541
+3,Westmoreland,2019-01-01,3580
+3,Westmoreland,2019-02-01,3507
+3,Westmoreland,2019-03-01,3489
+3,Westmoreland,2019-04-01,3507
+3,Westmoreland,2019-05-01,3588
+3,Westmoreland,2019-06-01,3573
+3,Westmoreland,2019-07-01,3590
+3,Westmoreland,2019-08-01,3544
+3,Westmoreland,2019-09-01,3545
+3,Westmoreland,2019-10-01,3500
+3,Westmoreland,2019-11-01,3510
+3,Westmoreland,2019-12-01,3487
+3,Westmoreland,2020-01-01,3444
+3,Westmoreland,2020-02-01,3404
+3,Westmoreland,2020-03-01,3252
+3,Westmoreland,2020-04-01,2887
+3,Westmoreland,2020-05-01,2845
+3,Westmoreland,2020-06-01,3091
+3,Westmoreland,2020-07-01,3467
+3,Westmoreland,2020-08-01,3635
+3,Westmoreland,2020-09-01,3722
+3,Westmoreland,2020-10-01,3784
+3,Westmoreland,2020-11-01,3788
+3,Westmoreland,2020-12-01,3748
+3,Westmoreland,2021-01-01,3808
+3,Westmoreland,2021-02-01,3697
+3,Westmoreland,2021-03-01,3769
+3,Westmoreland,2021-04-01,3778
+3,Westmoreland,2021-05-01,3633
+3,Westmoreland,2021-06-01,3603
+3,Westmoreland,2021-07-01,3649
+3,Westmoreland,2021-08-01,3730
+3,Westmoreland,2021-09-01,3776
+3,Westmoreland,2021-10-01,3747
+3,Westmoreland,2021-11-01,3724
+3,Westmoreland,2021-12-01,3687
+3,Westmoreland,2022-01-01,3676
+3,Westmoreland,2022-02-01,3744
+3,Westmoreland,2022-03-01,3861
+3,Westmoreland,2022-04-01,3986
+5,Lake June,2017-10-01,8103
+5,Lake June,2017-11-01,7959
+5,Lake June,2017-12-01,7813
+5,Lake June,2018-01-01,7752
+5,Lake June,2018-02-01,7586
+5,Lake June,2018-03-01,7468
+5,Lake June,2018-04-01,7513
+5,Lake June,2018-05-01,7581
+5,Lake June,2018-06-01,7517
+5,Lake June,2018-07-01,7463
+5,Lake June,2018-08-01,7167
+5,Lake June,2018-09-01,6882
+5,Lake June,2018-10-01,6607
+5,Lake June,2018-11-01,6389
+5,Lake June,2018-12-01,6356
+5,Lake June,2019-01-01,6419
+5,Lake June,2019-02-01,6249
+5,Lake June,2019-03-01,6321
+5,Lake June,2019-04-01,6281
+5,Lake June,2019-05-01,6293
+5,Lake June,2019-06-01,6386
+5,Lake June,2019-07-01,6581
+5,Lake June,2019-08-01,6661
+5,Lake June,2019-09-01,6674
+5,Lake June,2019-10-01,6690
+5,Lake June,2019-11-01,6609
+5,Lake June,2019-12-01,6673
+5,Lake June,2020-01-01,6822
+5,Lake June,2020-02-01,6834
+5,Lake June,2020-03-01,6655
+5,Lake June,2020-04-01,6892
+5,Lake June,2020-05-01,7237
+5,Lake June,2020-06-01,7545
+5,Lake June,2020-07-01,7864
+5,Lake June,2020-08-01,7704
+5,Lake June,2020-09-01,7601
+5,Lake June,2020-10-01,7652
+5,Lake June,2020-11-01,7804
+5,Lake June,2020-12-01,7685
+5,Lake June,2021-01-01,7640
+5,Lake June,2021-02-01,7346
+5,Lake June,2021-03-01,7462
+5,Lake June,2021-04-01,7544
+5,Lake June,2021-05-01,7396
+5,Lake June,2021-06-01,7451
+5,Lake June,2021-07-01,7384
+5,Lake June,2021-08-01,7452
+5,Lake June,2021-09-01,7533
+5,Lake June,2021-10-01,7602
+5,Lake June,2021-11-01,7765
+5,Lake June,2021-12-01,7659
+5,Lake June,2022-01-01,7712
+5,Lake June,2022-02-01,7635
+5,Lake June,2022-03-01,7810
+5,Lake June,2022-04-01,7982
+7,Carrollton,2017-10-01,2890
+7,Carrollton,2017-11-01,2887
+7,Carrollton,2017-12-01,2837
+7,Carrollton,2018-01-01,2833
+7,Carrollton,2018-02-01,2793
+7,Carrollton,2018-03-01,2788
+7,Carrollton,2018-04-01,2794
+7,Carrollton,2018-05-01,2831
+7,Carrollton,2018-06-01,2818
+7,Carrollton,2018-07-01,2762
+7,Carrollton,2018-08-01,2701
+7,Carrollton,2018-09-01,2645
+7,Carrollton,2018-10-01,2517
+7,Carrollton,2018-11-01,2401
+7,Carrollton,2018-12-01,2372
+7,Carrollton,2019-01-01,2367
+7,Carrollton,2019-02-01,2356
+7,Carrollton,2019-03-01,2400
+7,Carrollton,2019-04-01,2410
+7,Carrollton,2019-05-01,2361
+7,Carrollton,2019-06-01,2360
+7,Carrollton,2019-07-01,2361
+7,Carrollton,2019-08-01,2367
+7,Carrollton,2019-09-01,2405
+7,Carrollton,2019-10-01,2386
+7,Carrollton,2019-11-01,2391
+7,Carrollton,2019-12-01,2418
+7,Carrollton,2020-01-01,2412
+7,Carrollton,2020-02-01,2407
+7,Carrollton,2020-03-01,2266
+7,Carrollton,2020-04-01,2025
+7,Carrollton,2020-05-01,1489
+7,Carrollton,2020-06-01,1256
+7,Carrollton,2020-07-01,1443
+7,Carrollton,2020-08-01,1571
+7,Carrollton,2020-09-01,1853
+7,Carrollton,2020-10-01,1894
+7,Carrollton,2020-11-01,1916
+7,Carrollton,2020-12-01,1800
+7,Carrollton,2021-01-01,1376
+7,Carrollton,2021-02-01,808
+7,Carrollton,2021-03-01,349
+7,Carrollton,2021-04-01,6
+7,Carrollton,2021-05-01,6
+7,Carrollton,2021-06-01,3
+7,Carrollton,2021-07-01,
+7,Carrollton,2021-08-01,
+7,Carrollton,2021-09-01,
+7,Carrollton,2021-10-01,
+7,Carrollton,2021-11-01,
+7,Carrollton,2021-12-01,
+7,Carrollton,2022-01-01,
+7,Carrollton,2022-02-01,
+7,Carrollton,2022-03-01,
+7,Carrollton,2022-04-01,
+8,Grand Prairie,2017-10-01,4602
+8,Grand Prairie,2017-11-01,4526
+8,Grand Prairie,2017-12-01,4321
+8,Grand Prairie,2018-01-01,4358
+8,Grand Prairie,2018-02-01,4352
+8,Grand Prairie,2018-03-01,4347
+8,Grand Prairie,2018-04-01,4377
+8,Grand Prairie,2018-05-01,4394
+8,Grand Prairie,2018-06-01,4474
+8,Grand Prairie,2018-07-01,4335
+8,Grand Prairie,2018-08-01,4255
+8,Grand Prairie,2018-09-01,4095
+8,Grand Prairie,2018-10-01,4068
+8,Grand Prairie,2018-11-01,3926
+8,Grand Prairie,2018-12-01,3916
+8,Grand Prairie,2019-01-01,3875
+8,Grand Prairie,2019-02-01,3857
+8,Grand Prairie,2019-03-01,3942
+8,Grand Prairie,2019-04-01,3887
+8,Grand Prairie,2019-05-01,3939
+8,Grand Prairie,2019-06-01,3887
+8,Grand Prairie,2019-07-01,3928
+8,Grand Prairie,2019-08-01,3952
+8,Grand Prairie,2019-09-01,3962
+8,Grand Prairie,2019-10-01,4007
+8,Grand Prairie,2019-11-01,3953
+8,Grand Prairie,2019-12-01,3898
+8,Grand Prairie,2020-01-01,3965
+8,Grand Prairie,2020-02-01,3979
+8,Grand Prairie,2020-03-01,3918
+8,Grand Prairie,2020-04-01,4191
+8,Grand Prairie,2020-05-01,4344
+8,Grand Prairie,2020-06-01,4465
+8,Grand Prairie,2020-07-01,4202
+8,Grand Prairie,2020-08-01,3890
+8,Grand Prairie,2020-09-01,3900
+8,Grand Prairie,2020-10-01,3915
+8,Grand Prairie,2020-11-01,3864
+8,Grand Prairie,2020-12-01,3889
+8,Grand Prairie,2021-01-01,3780
+8,Grand Prairie,2021-02-01,3712
+8,Grand Prairie,2021-03-01,3745
+8,Grand Prairie,2021-04-01,3730
+8,Grand Prairie,2021-05-01,3672
+8,Grand Prairie,2021-06-01,3683
+8,Grand Prairie,2021-07-01,3693
+8,Grand Prairie,2021-08-01,3837
+8,Grand Prairie,2021-09-01,3873
+8,Grand Prairie,2021-10-01,3923
+8,Grand Prairie,2021-11-01,4035
+8,Grand Prairie,2021-12-01,4032
+8,Grand Prairie,2022-01-01,4042
+8,Grand Prairie,2022-02-01,4022
+8,Grand Prairie,2022-03-01,4110
+8,Grand Prairie,2022-04-01,4173
+9,Irving,2017-10-01,7618
+9,Irving,2017-11-01,7557
+9,Irving,2017-12-01,7474
+9,Irving,2018-01-01,7496
+9,Irving,2018-02-01,7423
+9,Irving,2018-03-01,7344
+9,Irving,2018-04-01,7323
+9,Irving,2018-05-01,7385
+9,Irving,2018-06-01,7391
+9,Irving,2018-07-01,7248
+9,Irving,2018-08-01,6847
+9,Irving,2018-09-01,6583
+9,Irving,2018-10-01,6331
+9,Irving,2018-11-01,5985
+9,Irving,2018-12-01,6047
+9,Irving,2019-01-01,5995
+9,Irving,2019-02-01,6001
+9,Irving,2019-03-01,6098
+9,Irving,2019-04-01,6099
+9,Irving,2019-05-01,6191
+9,Irving,2019-06-01,6234
+9,Irving,2019-07-01,6277
+9,Irving,2019-08-01,6391
+9,Irving,2019-09-01,6306
+9,Irving,2019-10-01,6316
+9,Irving,2019-11-01,6297
+9,Irving,2019-12-01,6289
+9,Irving,2020-01-01,6339
+9,Irving,2020-02-01,6294
+9,Irving,2020-03-01,6035
+9,Irving,2020-04-01,5727
+9,Irving,2020-05-01,5404
+9,Irving,2020-06-01,5669
+9,Irving,2020-07-01,6101
+9,Irving,2020-08-01,6289
+9,Irving,2020-09-01,6261
+9,Irving,2020-10-01,6428
+9,Irving,2020-11-01,6517
+9,Irving,2020-12-01,6523
+9,Irving,2021-01-01,6605
+9,Irving,2021-02-01,6548
+9,Irving,2021-03-01,6756
+9,Irving,2021-04-01,6728
+9,Irving,2021-05-01,6555
+9,Irving,2021-06-01,6649
+9,Irving,2021-07-01,6814
+9,Irving,2021-08-01,7025
+9,Irving,2021-09-01,7240
+9,Irving,2021-10-01,7374
+9,Irving,2021-11-01,7568
+9,Irving,2021-12-01,7691
+9,Irving,2022-01-01,7932
+9,Irving,2022-02-01,7912
+9,Irving,2022-03-01,8014
+9,Irving,2022-04-01,8107
+10,Lancaster Road,2017-10-01,3064
+10,Lancaster Road,2017-11-01,3006
+10,Lancaster Road,2017-12-01,2902
+10,Lancaster Road,2018-01-01,2916
+10,Lancaster Road,2018-02-01,2889
+10,Lancaster Road,2018-03-01,2889
+10,Lancaster Road,2018-04-01,2876
+10,Lancaster Road,2018-05-01,2860
+10,Lancaster Road,2018-06-01,2917
+10,Lancaster Road,2018-07-01,2905
+10,Lancaster Road,2018-08-01,2797
+10,Lancaster Road,2018-09-01,2712
+10,Lancaster Road,2018-10-01,2705
+10,Lancaster Road,2018-11-01,2624
+10,Lancaster Road,2018-12-01,2634
+10,Lancaster Road,2019-01-01,2621
+10,Lancaster Road,2019-02-01,2436
+10,Lancaster Road,2019-03-01,2309
+10,Lancaster Road,2019-04-01,2188
+10,Lancaster Road,2019-05-01,2140
+10,Lancaster Road,2019-06-01,2097
+10,Lancaster Road,2019-07-01,2100
+10,Lancaster Road,2019-08-01,2119
+10,Lancaster Road,2019-09-01,2013
+10,Lancaster Road,2019-10-01,1544
+10,Lancaster Road,2019-11-01,1262
+10,Lancaster Road,2019-12-01,1064
+10,Lancaster Road,2020-01-01,1121
+10,Lancaster Road,2020-02-01,1200
+10,Lancaster Road,2020-03-01,1143
+10,Lancaster Road,2020-04-01,1170
+10,Lancaster Road,2020-05-01,806
+10,Lancaster Road,2020-06-01,540
+10,Lancaster Road,2020-07-01,212
+10,Lancaster Road,2020-08-01,65
+10,Lancaster Road,2020-09-01,10
+10,Lancaster Road,2020-10-01,4
+10,Lancaster Road,2020-11-01,1
+10,Lancaster Road,2020-12-01,
+10,Lancaster Road,2021-01-01,
+10,Lancaster Road,2021-02-01,
+10,Lancaster Road,2021-03-01,
+10,Lancaster Road,2021-04-01,0
+10,Lancaster Road,2021-05-01,0
+10,Lancaster Road,2021-06-01,0
+10,Lancaster Road,2021-07-01,8
+10,Lancaster Road,2021-08-01,22
+10,Lancaster Road,2021-09-01,42
+10,Lancaster Road,2021-10-01,51
+10,Lancaster Road,2021-11-01,86
+10,Lancaster Road,2021-12-01,103
+10,Lancaster Road,2022-01-01,112
+10,Lancaster Road,2022-02-01,121
+10,Lancaster Road,2022-03-01,132
+10,Lancaster Road,2022-04-01,133
+11,East Garland,2017-10-01,4614
+11,East Garland,2017-11-01,4566
+11,East Garland,2017-12-01,4488
+11,East Garland,2018-01-01,4518
+11,East Garland,2018-02-01,4434
+11,East Garland,2018-03-01,4432
+11,East Garland,2018-04-01,4405
+11,East Garland,2018-05-01,4421
+11,East Garland,2018-06-01,4431
+11,East Garland,2018-07-01,4251
+11,East Garland,2018-08-01,4200
+11,East Garland,2018-09-01,4172
+11,East Garland,2018-10-01,4071
+11,East Garland,2018-11-01,3909
+11,East Garland,2018-12-01,3932
+11,East Garland,2019-01-01,3920
+11,East Garland,2019-02-01,3836
+11,East Garland,2019-03-01,3910
+11,East Garland,2019-04-01,3982
+11,East Garland,2019-05-01,4025
+11,East Garland,2019-06-01,4039
+11,East Garland,2019-07-01,4121
+11,East Garland,2019-08-01,4191
+11,East Garland,2019-09-01,4197
+11,East Garland,2019-10-01,4216
+11,East Garland,2019-11-01,4165
+11,East Garland,2019-12-01,4114
+11,East Garland,2020-01-01,4173
+11,East Garland,2020-02-01,4274
+11,East Garland,2020-03-01,4223
+11,East Garland,2020-04-01,4027
+11,East Garland,2020-05-01,3874
+11,East Garland,2020-06-01,3994
+11,East Garland,2020-07-01,4294
+11,East Garland,2020-08-01,4365
+11,East Garland,2020-09-01,4392
+11,East Garland,2020-10-01,4402
+11,East Garland,2020-11-01,4375
+11,East Garland,2020-12-01,4386
+11,East Garland,2021-01-01,4401
+11,East Garland,2021-02-01,4335
+11,East Garland,2021-03-01,4377
+11,East Garland,2021-04-01,4332
+11,East Garland,2021-05-01,4338
+11,East Garland,2021-06-01,4355
+11,East Garland,2021-07-01,4326
+11,East Garland,2021-08-01,4375
+11,East Garland,2021-09-01,4443
+11,East Garland,2021-10-01,4415
+11,East Garland,2021-11-01,4407
+11,East Garland,2021-12-01,4356
+11,East Garland,2022-01-01,4451
+11,East Garland,2022-02-01,4417
+11,East Garland,2022-03-01,4454
+11,East Garland,2022-04-01,4533
+17,Northwest Hwy,2017-10-01,3764
+17,Northwest Hwy,2017-11-01,3719
+17,Northwest Hwy,2017-12-01,3637
+17,Northwest Hwy,2018-01-01,3574
+17,Northwest Hwy,2018-02-01,3556
+17,Northwest Hwy,2018-03-01,3566
+17,Northwest Hwy,2018-04-01,3547
+17,Northwest Hwy,2018-05-01,3539
+17,Northwest Hwy,2018-06-01,3566
+17,Northwest Hwy,2018-07-01,3444
+17,Northwest Hwy,2018-08-01,3375
+17,Northwest Hwy,2018-09-01,3244
+17,Northwest Hwy,2018-10-01,3121
+17,Northwest Hwy,2018-11-01,2985
+17,Northwest Hwy,2018-12-01,2965
+17,Northwest Hwy,2019-01-01,2907
+17,Northwest Hwy,2019-02-01,2860
+17,Northwest Hwy,2019-03-01,2919
+17,Northwest Hwy,2019-04-01,2938
+17,Northwest Hwy,2019-05-01,2949
+17,Northwest Hwy,2019-06-01,2941
+17,Northwest Hwy,2019-07-01,2945
+17,Northwest Hwy,2019-08-01,2940
+17,Northwest Hwy,2019-09-01,2926
+17,Northwest Hwy,2019-10-01,2865
+17,Northwest Hwy,2019-11-01,2783
+17,Northwest Hwy,2019-12-01,2723
+17,Northwest Hwy,2020-01-01,2852
+17,Northwest Hwy,2020-02-01,2835
+17,Northwest Hwy,2020-03-01,2820
+17,Northwest Hwy,2020-04-01,2877
+17,Northwest Hwy,2020-05-01,3063
+17,Northwest Hwy,2020-06-01,3227
+17,Northwest Hwy,2020-07-01,3143
+17,Northwest Hwy,2020-08-01,3097
+17,Northwest Hwy,2020-09-01,2919
+17,Northwest Hwy,2020-10-01,2902
+17,Northwest Hwy,2020-11-01,2827
+17,Northwest Hwy,2020-12-01,2876
+17,Northwest Hwy,2021-01-01,2967
+17,Northwest Hwy,2021-02-01,3060
+17,Northwest Hwy,2021-03-01,3269
+17,Northwest Hwy,2021-04-01,3323
+17,Northwest Hwy,2021-05-01,3310
+17,Northwest Hwy,2021-06-01,3372
+17,Northwest Hwy,2021-07-01,3358
+17,Northwest Hwy,2021-08-01,3374
+17,Northwest Hwy,2021-09-01,3435
+17,Northwest Hwy,2021-10-01,3398
+17,Northwest Hwy,2021-11-01,3414
+17,Northwest Hwy,2021-12-01,3339
+17,Northwest Hwy,2022-01-01,3348
+17,Northwest Hwy,2022-02-01,3298
+17,Northwest Hwy,2022-03-01,3304
+17,Northwest Hwy,2022-04-01,3293
+24,North Dallas,2017-10-01,6057
+24,North Dallas,2017-11-01,6004
+24,North Dallas,2017-12-01,5867
+24,North Dallas,2018-01-01,5880
+24,North Dallas,2018-02-01,5797
+24,North Dallas,2018-03-01,5773
+24,North Dallas,2018-04-01,5686
+24,North Dallas,2018-05-01,5665
+24,North Dallas,2018-06-01,5557
+24,North Dallas,2018-07-01,5340
+24,North Dallas,2018-08-01,5294
+24,North Dallas,2018-09-01,5154
+24,North Dallas,2018-10-01,5002
+24,North Dallas,2018-11-01,4723
+24,North Dallas,2018-12-01,4734
+24,North Dallas,2019-01-01,4753
+24,North Dallas,2019-02-01,4768
+24,North Dallas,2019-03-01,4935
+24,North Dallas,2019-04-01,4930
+24,North Dallas,2019-05-01,4936
+24,North Dallas,2019-06-01,4957
+24,North Dallas,2019-07-01,5028
+24,North Dallas,2019-08-01,5100
+24,North Dallas,2019-09-01,5084
+24,North Dallas,2019-10-01,5106
+24,North Dallas,2019-11-01,5017
+24,North Dallas,2019-12-01,4999
+24,North Dallas,2020-01-01,5062
+24,North Dallas,2020-02-01,5037
+24,North Dallas,2020-03-01,5216
+24,North Dallas,2020-04-01,5508
+24,North Dallas,2020-05-01,5933
+24,North Dallas,2020-06-01,6030
+24,North Dallas,2020-07-01,5923
+24,North Dallas,2020-08-01,5554
+24,North Dallas,2020-09-01,5359
+24,North Dallas,2020-10-01,5373
+24,North Dallas,2020-11-01,5431
+24,North Dallas,2020-12-01,5487
+24,North Dallas,2021-01-01,5585
+24,North Dallas,2021-02-01,5664
+24,North Dallas,2021-03-01,5940
+24,North Dallas,2021-04-01,6047
+24,North Dallas,2021-05-01,5855
+24,North Dallas,2021-06-01,5876
+24,North Dallas,2021-07-01,5856
+24,North Dallas,2021-08-01,5916
+24,North Dallas,2021-09-01,6048
+24,North Dallas,2021-10-01,6035
+24,North Dallas,2021-11-01,5972
+24,North Dallas,2021-12-01,6016
+24,North Dallas,2022-01-01,6043
+24,North Dallas,2022-02-01,5967
+24,North Dallas,2022-03-01,6065
+24,North Dallas,2022-04-01,6128
+25,Ledbetter,2017-10-01,7887
+25,Ledbetter,2017-11-01,7713
+25,Ledbetter,2017-12-01,7517
+25,Ledbetter,2018-01-01,7642
+25,Ledbetter,2018-02-01,7638
+25,Ledbetter,2018-03-01,7663
+25,Ledbetter,2018-04-01,7685
+25,Ledbetter,2018-05-01,7825
+25,Ledbetter,2018-06-01,7870
+25,Ledbetter,2018-07-01,7567
+25,Ledbetter,2018-08-01,7701
+25,Ledbetter,2018-09-01,7593
+25,Ledbetter,2018-10-01,7514
+25,Ledbetter,2018-11-01,7231
+25,Ledbetter,2018-12-01,7169
+25,Ledbetter,2019-01-01,7029
+25,Ledbetter,2019-02-01,6876
+25,Ledbetter,2019-03-01,6926
+25,Ledbetter,2019-04-01,6959
+25,Ledbetter,2019-05-01,6937
+25,Ledbetter,2019-06-01,7045
+25,Ledbetter,2019-07-01,7188
+25,Ledbetter,2019-08-01,7255
+25,Ledbetter,2019-09-01,7283
+25,Ledbetter,2019-10-01,7606
+25,Ledbetter,2019-11-01,7637
+25,Ledbetter,2019-12-01,7763
+25,Ledbetter,2020-01-01,7872
+25,Ledbetter,2020-02-01,7897
+25,Ledbetter,2020-03-01,8100
+25,Ledbetter,2020-04-01,8747
+25,Ledbetter,2020-05-01,9495
+25,Ledbetter,2020-06-01,9818
+25,Ledbetter,2020-07-01,9962
+25,Ledbetter,2020-08-01,9303
+25,Ledbetter,2020-09-01,8963
+25,Ledbetter,2020-10-01,8937
+25,Ledbetter,2020-11-01,8866
+25,Ledbetter,2020-12-01,8849
+25,Ledbetter,2021-01-01,8775
+25,Ledbetter,2021-02-01,8332
+25,Ledbetter,2021-03-01,8387
+25,Ledbetter,2021-04-01,8181
+25,Ledbetter,2021-05-01,7917
+25,Ledbetter,2021-06-01,7618
+25,Ledbetter,2021-07-01,7525
+25,Ledbetter,2021-08-01,7750
+25,Ledbetter,2021-09-01,7911
+25,Ledbetter,2021-10-01,7911
+25,Ledbetter,2021-11-01,7740
+25,Ledbetter,2021-12-01,7593
+25,Ledbetter,2022-01-01,7691
+25,Ledbetter,2022-02-01,7581
+25,Ledbetter,2022-03-01,7624
+25,Ledbetter,2022-04-01,7661
+26,John West/Buckner,2017-10-01,6616
+26,John West/Buckner,2017-11-01,6482
+26,John West/Buckner,2017-12-01,6339
+26,John West/Buckner,2018-01-01,6259
+26,John West/Buckner,2018-02-01,6191
+26,John West/Buckner,2018-03-01,6049
+26,John West/Buckner,2018-04-01,6033
+26,John West/Buckner,2018-05-01,6005
+26,John West/Buckner,2018-06-01,5952
+26,John West/Buckner,2018-07-01,5820
+26,John West/Buckner,2018-08-01,5506
+26,John West/Buckner,2018-09-01,5396
+26,John West/Buckner,2018-10-01,5099
+26,John West/Buckner,2018-11-01,4951
+26,John West/Buckner,2018-12-01,4942
+26,John West/Buckner,2019-01-01,4889
+26,John West/Buckner,2019-02-01,4741
+26,John West/Buckner,2019-03-01,4699
+26,John West/Buckner,2019-04-01,4685
+26,John West/Buckner,2019-05-01,4701
+26,John West/Buckner,2019-06-01,4698
+26,John West/Buckner,2019-07-01,4733
+26,John West/Buckner,2019-08-01,4755
+26,John West/Buckner,2019-09-01,4735
+26,John West/Buckner,2019-10-01,4687
+26,John West/Buckner,2019-11-01,4574
+26,John West/Buckner,2019-12-01,4475
+26,John West/Buckner,2020-01-01,4512
+26,John West/Buckner,2020-02-01,4520
+26,John West/Buckner,2020-03-01,4346
+26,John West/Buckner,2020-04-01,3928
+26,John West/Buckner,2020-05-01,3761
+26,John West/Buckner,2020-06-01,3952
+26,John West/Buckner,2020-07-01,4056
+26,John West/Buckner,2020-08-01,4195
+26,John West/Buckner,2020-09-01,4189
+26,John West/Buckner,2020-10-01,4214
+26,John West/Buckner,2020-11-01,4128
+26,John West/Buckner,2020-12-01,4101
+26,John West/Buckner,2021-01-01,4055
+26,John West/Buckner,2021-02-01,3846
+26,John West/Buckner,2021-03-01,3951
+26,John West/Buckner,2021-04-01,4008
+26,John West/Buckner,2021-05-01,4062
+26,John West/Buckner,2021-06-01,4077
+26,John West/Buckner,2021-07-01,4140
+26,John West/Buckner,2021-08-01,4217
+26,John West/Buckner,2021-09-01,4390
+26,John West/Buckner,2021-10-01,4406
+26,John West/Buckner,2021-11-01,4442
+26,John West/Buckner,2021-12-01,4471
+26,John West/Buckner,2022-01-01,4513
+26,John West/Buckner,2022-02-01,4454
+26,John West/Buckner,2022-03-01,4574
+26,John West/Buckner,2022-04-01,4700
+30,Duncanville,2017-10-01,3466
+30,Duncanville,2017-11-01,3420
+30,Duncanville,2017-12-01,3384
+30,Duncanville,2018-01-01,3374
+30,Duncanville,2018-02-01,3316
+30,Duncanville,2018-03-01,3294
+30,Duncanville,2018-04-01,3337
+30,Duncanville,2018-05-01,3328
+30,Duncanville,2018-06-01,3274
+30,Duncanville,2018-07-01,3207
+30,Duncanville,2018-08-01,3071
+30,Duncanville,2018-09-01,2986
+30,Duncanville,2018-10-01,2879
+30,Duncanville,2018-11-01,2753
+30,Duncanville,2018-12-01,2751
+30,Duncanville,2019-01-01,2750
+30,Duncanville,2019-02-01,2607
+30,Duncanville,2019-03-01,2650
+30,Duncanville,2019-04-01,2667
+30,Duncanville,2019-05-01,2659
+30,Duncanville,2019-06-01,2725
+30,Duncanville,2019-07-01,2814
+30,Duncanville,2019-08-01,2818
+30,Duncanville,2019-09-01,2860
+30,Duncanville,2019-10-01,2924
+30,Duncanville,2019-11-01,2924
+30,Duncanville,2019-12-01,2936
+30,Duncanville,2020-01-01,3050
+30,Duncanville,2020-02-01,3036
+30,Duncanville,2020-03-01,3106
+30,Duncanville,2020-04-01,2915
+30,Duncanville,2020-05-01,2552
+30,Duncanville,2020-06-01,2480
+30,Duncanville,2020-07-01,2518
+30,Duncanville,2020-08-01,2512
+30,Duncanville,2020-09-01,2501
+30,Duncanville,2020-10-01,2440
+30,Duncanville,2020-11-01,2456
+30,Duncanville,2020-12-01,2480
+30,Duncanville,2021-01-01,2439
+30,Duncanville,2021-02-01,2371
+30,Duncanville,2021-03-01,2384
+30,Duncanville,2021-04-01,2304
+30,Duncanville,2021-05-01,2298
+30,Duncanville,2021-06-01,2361
+30,Duncanville,2021-07-01,2310
+30,Duncanville,2021-08-01,2470
+30,Duncanville,2021-09-01,2599
+30,Duncanville,2021-10-01,2582
+30,Duncanville,2021-11-01,2642
+30,Duncanville,2021-12-01,2678
+30,Duncanville,2022-01-01,2697
+30,Duncanville,2022-02-01,2621
+30,Duncanville,2022-03-01,2670
+30,Duncanville,2022-04-01,2748
+32,West Garland,2017-10-01,5409
+32,West Garland,2017-11-01,5323
+32,West Garland,2017-12-01,5225
+32,West Garland,2018-01-01,5157
+32,West Garland,2018-02-01,5165
+32,West Garland,2018-03-01,5091
+32,West Garland,2018-04-01,5038
+32,West Garland,2018-05-01,5003
+32,West Garland,2018-06-01,4923
+32,West Garland,2018-07-01,4877
+32,West Garland,2018-08-01,4661
+32,West Garland,2018-09-01,4456
+32,West Garland,2018-10-01,4346
+32,West Garland,2018-11-01,4151
+32,West Garland,2018-12-01,4164
+32,West Garland,2019-01-01,4157
+32,West Garland,2019-02-01,4064
+32,West Garland,2019-03-01,4124
+32,West Garland,2019-04-01,4143
+32,West Garland,2019-05-01,4097
+32,West Garland,2019-06-01,4058
+32,West Garland,2019-07-01,4087
+32,West Garland,2019-08-01,4144
+32,West Garland,2019-09-01,4134
+32,West Garland,2019-10-01,4119
+32,West Garland,2019-11-01,4080
+32,West Garland,2019-12-01,4066
+32,West Garland,2020-01-01,4074
+32,West Garland,2020-02-01,4080
+32,West Garland,2020-03-01,3981
+32,West Garland,2020-04-01,4157
+32,West Garland,2020-05-01,4504
+32,West Garland,2020-06-01,4592
+32,West Garland,2020-07-01,4772
+32,West Garland,2020-08-01,4658
+32,West Garland,2020-09-01,4546
+32,West Garland,2020-10-01,4612
+32,West Garland,2020-11-01,4571
+32,West Garland,2020-12-01,4473
+32,West Garland,2021-01-01,4337
+32,West Garland,2021-02-01,4254
+32,West Garland,2021-03-01,4291
+32,West Garland,2021-04-01,4183
+32,West Garland,2021-05-01,4095
+32,West Garland,2021-06-01,4112
+32,West Garland,2021-07-01,3999
+32,West Garland,2021-08-01,4075
+32,West Garland,2021-09-01,4215
+32,West Garland,2021-10-01,4276
+32,West Garland,2021-11-01,4353
+32,West Garland,2021-12-01,4404
+32,West Garland,2022-01-01,4540
+32,West Garland,2022-02-01,4562
+32,West Garland,2022-03-01,4641
+32,West Garland,2022-04-01,4603
+34,Stemmons Clinic,2017-10-01,57
+34,Stemmons Clinic,2017-11-01,18
+34,Stemmons Clinic,2017-12-01,1
+34,Stemmons Clinic,2018-01-01,
+34,Stemmons Clinic,2018-02-01,
+34,Stemmons Clinic,2018-03-01,
+34,Stemmons Clinic,2018-04-01,
+34,Stemmons Clinic,2018-05-01,
+34,Stemmons Clinic,2018-06-01,
+34,Stemmons Clinic,2018-07-01,
+34,Stemmons Clinic,2018-08-01,5
+34,Stemmons Clinic,2018-09-01,2
+34,Stemmons Clinic,2018-10-01,7
+34,Stemmons Clinic,2018-11-01,8
+34,Stemmons Clinic,2018-12-01,7
+34,Stemmons Clinic,2019-01-01,
+34,Stemmons Clinic,2019-02-01,1
+34,Stemmons Clinic,2019-03-01,2
+34,Stemmons Clinic,2019-04-01,1
+34,Stemmons Clinic,2019-05-01,
+34,Stemmons Clinic,2019-06-01,
+34,Stemmons Clinic,2019-07-01,
+34,Stemmons Clinic,2019-08-01,
+34,Stemmons Clinic,2019-09-01,
+34,Stemmons Clinic,2019-10-01,
+34,Stemmons Clinic,2019-11-01,
+34,Stemmons Clinic,2019-12-01,
+34,Stemmons Clinic,2020-01-01,
+34,Stemmons Clinic,2020-02-01,
+34,Stemmons Clinic,2020-03-01,
+34,Stemmons Clinic,2020-04-01,
+34,Stemmons Clinic,2020-05-01,
+34,Stemmons Clinic,2020-06-01,
+34,Stemmons Clinic,2020-07-01,
+34,Stemmons Clinic,2020-08-01,
+34,Stemmons Clinic,2020-09-01,
+34,Stemmons Clinic,2020-10-01,
+34,Stemmons Clinic,2020-11-01,
+34,Stemmons Clinic,2020-12-01,
+34,Stemmons Clinic,2021-01-01,
+34,Stemmons Clinic,2021-02-01,
+34,Stemmons Clinic,2021-03-01,
+34,Stemmons Clinic,2021-04-01,
+34,Stemmons Clinic,2021-05-01,
+34,Stemmons Clinic,2021-06-01,
+34,Stemmons Clinic,2021-07-01,
+34,Stemmons Clinic,2021-08-01,
+34,Stemmons Clinic,2021-09-01,
+34,Stemmons Clinic,2021-10-01,
+34,Stemmons Clinic,2021-11-01,
+34,Stemmons Clinic,2021-12-01,
+34,Stemmons Clinic,2022-01-01,
+34,Stemmons Clinic,2022-02-01,
+34,Stemmons Clinic,2022-03-01,
+34,Stemmons Clinic,2022-04-01,
+37,Abrams Road,2017-10-01,4371
+37,Abrams Road,2017-11-01,4360
+37,Abrams Road,2017-12-01,4274
+37,Abrams Road,2018-01-01,4266
+37,Abrams Road,2018-02-01,4186
+37,Abrams Road,2018-03-01,4186
+37,Abrams Road,2018-04-01,4136
+37,Abrams Road,2018-05-01,4148
+37,Abrams Road,2018-06-01,4137
+37,Abrams Road,2018-07-01,3968
+37,Abrams Road,2018-08-01,3951
+37,Abrams Road,2018-09-01,3888
+37,Abrams Road,2018-10-01,3833
+37,Abrams Road,2018-11-01,3648
+37,Abrams Road,2018-12-01,3633
+37,Abrams Road,2019-01-01,3594
+37,Abrams Road,2019-02-01,3474
+37,Abrams Road,2019-03-01,3562
+37,Abrams Road,2019-04-01,3636
+37,Abrams Road,2019-05-01,3594
+37,Abrams Road,2019-06-01,3543
+37,Abrams Road,2019-07-01,3574
+37,Abrams Road,2019-08-01,3617
+37,Abrams Road,2019-09-01,3659
+37,Abrams Road,2019-10-01,3633
+37,Abrams Road,2019-11-01,3641
+37,Abrams Road,2019-12-01,3617
+37,Abrams Road,2020-01-01,3687
+37,Abrams Road,2020-02-01,3616
+37,Abrams Road,2020-03-01,3485
+37,Abrams Road,2020-04-01,3455
+37,Abrams Road,2020-05-01,3607
+37,Abrams Road,2020-06-01,3663
+37,Abrams Road,2020-07-01,3881
+37,Abrams Road,2020-08-01,3707
+37,Abrams Road,2020-09-01,3707
+37,Abrams Road,2020-10-01,3765
+37,Abrams Road,2020-11-01,3758
+37,Abrams Road,2020-12-01,3758
+37,Abrams Road,2021-01-01,3739
+37,Abrams Road,2021-02-01,3593
+37,Abrams Road,2021-03-01,3653
+37,Abrams Road,2021-04-01,3593
+37,Abrams Road,2021-05-01,3535
+37,Abrams Road,2021-06-01,3578
+37,Abrams Road,2021-07-01,3635
+37,Abrams Road,2021-08-01,3699
+37,Abrams Road,2021-09-01,3733
+37,Abrams Road,2021-10-01,3736
+37,Abrams Road,2021-11-01,3818
+37,Abrams Road,2021-12-01,3785
+37,Abrams Road,2022-01-01,3769
+37,Abrams Road,2022-02-01,3757
+37,Abrams Road,2022-03-01,3870
+37,Abrams Road,2022-04-01,3932
+39,Mesquite,2017-10-01,3921
+39,Mesquite,2017-11-01,3910
+39,Mesquite,2017-12-01,3862
+39,Mesquite,2018-01-01,3920
+39,Mesquite,2018-02-01,3858
+39,Mesquite,2018-03-01,3860
+39,Mesquite,2018-04-01,3859
+39,Mesquite,2018-05-01,3871
+39,Mesquite,2018-06-01,3902
+39,Mesquite,2018-07-01,3749
+39,Mesquite,2018-08-01,3671
+39,Mesquite,2018-09-01,3643
+39,Mesquite,2018-10-01,3551
+39,Mesquite,2018-11-01,3397
+39,Mesquite,2018-12-01,3450
+39,Mesquite,2019-01-01,3454
+39,Mesquite,2019-02-01,3400
+39,Mesquite,2019-03-01,3453
+39,Mesquite,2019-04-01,3459
+39,Mesquite,2019-05-01,3434
+39,Mesquite,2019-06-01,3475
+39,Mesquite,2019-07-01,3515
+39,Mesquite,2019-08-01,3570
+39,Mesquite,2019-09-01,3624
+39,Mesquite,2019-10-01,3688
+39,Mesquite,2019-11-01,3723
+39,Mesquite,2019-12-01,3672
+39,Mesquite,2020-01-01,3718
+39,Mesquite,2020-02-01,3689
+39,Mesquite,2020-03-01,3490
+39,Mesquite,2020-04-01,3077
+39,Mesquite,2020-05-01,2786
+39,Mesquite,2020-06-01,2766
+39,Mesquite,2020-07-01,2874
+39,Mesquite,2020-08-01,3062
+39,Mesquite,2020-09-01,3004
+39,Mesquite,2020-10-01,3074
+39,Mesquite,2020-11-01,3102
+39,Mesquite,2020-12-01,3071
+39,Mesquite,2021-01-01,3051
+39,Mesquite,2021-02-01,2934
+39,Mesquite,2021-03-01,2952
+39,Mesquite,2021-04-01,2964
+39,Mesquite,2021-05-01,3024
+39,Mesquite,2021-06-01,3020
+39,Mesquite,2021-07-01,3054
+39,Mesquite,2021-08-01,3186
+39,Mesquite,2021-09-01,3325
+39,Mesquite,2021-10-01,3285
+39,Mesquite,2021-11-01,3350
+39,Mesquite,2021-12-01,3409
+39,Mesquite,2022-01-01,3505
+39,Mesquite,2022-02-01,3404
+39,Mesquite,2022-03-01,3467
+39,Mesquite,2022-04-01,3413
+34,Medical District,2017-10-01,
+34,Medical District,2017-11-01,
+34,Medical District,2017-12-01,
+34,Medical District,2018-01-01,
+34,Medical District,2018-02-01,
+34,Medical District,2018-03-01,
+34,Medical District,2018-04-01,
+34,Medical District,2018-05-01,
+34,Medical District,2018-06-01,
+34,Medical District,2018-07-01,
+34,Medical District,2018-08-01,
+34,Medical District,2018-09-01,
+34,Medical District,2018-10-01,
+34,Medical District,2018-11-01,
+34,Medical District,2018-12-01,
+34,Medical District,2019-01-01,
+34,Medical District,2019-02-01,
+34,Medical District,2019-03-01,
+34,Medical District,2019-04-01,
+34,Medical District,2019-05-01,
+34,Medical District,2019-06-01,
+34,Medical District,2019-07-01,
+34,Medical District,2019-08-01,
+34,Medical District,2019-09-01,
+34,Medical District,2019-10-01,
+34,Medical District,2019-11-01,
+34,Medical District,2019-12-01,
+34,Medical District,2020-01-01,
+34,Medical District,2020-02-01,
+34,Medical District,2020-03-01,291
+34,Medical District,2020-04-01,859
+34,Medical District,2020-05-01,978
+34,Medical District,2020-06-01,979
+34,Medical District,2020-07-01,511
+34,Medical District,2020-08-01,330
+34,Medical District,2020-09-01,233
+34,Medical District,2020-10-01,241
+34,Medical District,2020-11-01,270
+34,Medical District,2020-12-01,325
+34,Medical District,2021-01-01,310
+34,Medical District,2021-02-01,289
+34,Medical District,2021-03-01,264
+34,Medical District,2021-04-01,284
+34,Medical District,2021-05-01,305
+34,Medical District,2021-06-01,340
+34,Medical District,2021-07-01,345
+34,Medical District,2021-08-01,354
+34,Medical District,2021-09-01,347
+34,Medical District,2021-10-01,302
+34,Medical District,2021-11-01,297
+34,Medical District,2021-12-01,280
+34,Medical District,2022-01-01,200
+34,Medical District,2022-02-01,176
+34,Medical District,2022-03-01,181
+34,Medical District,2022-04-01,179
