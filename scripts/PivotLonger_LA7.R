@@ -9,6 +9,6 @@ wic_localagency <- import("data/LA7 Monthly Clinic Participation Report Wide.csv
          date = as.Date(paste0(date, "_01"), format = "%y_%b_%d"))
 
 export(wic_localagency, "data/LA7 Monthly Clinic Participation Report Long.csv")
-
+export(wic_localagency, "C:/Users/micha/CPAL Dropbox/Basic Needs/02_Data/LA 7 Monthly Clinic Participation Reports/LA7 Monthly Clinic Participation Report Long.csv")
 str(wic_localagency)
 names(wic_localagency)

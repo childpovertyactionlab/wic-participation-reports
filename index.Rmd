@@ -80,12 +80,11 @@ clinics <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/16Wf9AYXo-_RN
     mutate(ClinicNo = as.character(ClinicNo)) %>%
   st_transform(crs = 4326)
 
-
 clinicbuffer <- clinics %>%
   st_buffer(., dist = 15840) %>%
   GeoIntersect(., wic_eligible_sf) %>%
   group_by(Name, ClinicNo, Rent, SqFt, Address, City, ZIP) %>%
-  summarise(WIC_eligible = sum(elig_185*PerIntSm, na.rm = TRUE)) %>%
+  summarise(WIC_eligible = sum(wic_eligibleE*PerIntSm, na.rm = TRUE)) %>%
   ungroup() %>%
   st_transform(crs = 4326) %>%
   mutate(ClinicNo = as.character(ClinicNo)) %>%
@@ -106,12 +105,14 @@ clinicjoin <- clinics %>%
   select(-Address, -City, -ZIP, -Name, -SqFt, -Rent, -WIC_eligible) %>%
   left_join(., clinicbuffer)
 
+#names(clinics)
 wic_eligible_sf <- wic_eligible_sf %>%
   st_transform(crs = 4326)
 
 month <- as.character(month(ymd(max(la7participation$date)), abbr = FALSE, label = TRUE))
 year <- as.character(year(ymd(max(la7participation$date))))
 
+#highways <- st_read("C:/Users/micha/CPAL Dropbox/Data Library/NCTCOG/Highways_(2019).shp") %>%
 highways <- st_read("E:/CPAL Dropbox/Data Library/NCTCOG/Highways_(2019).shp") %>%
   st_transform(crs = 4326) %>%
   st_intersection(., dallas_sf)
@@ -168,15 +169,15 @@ ggplotly(WIClocal, tooltip = "EligPart")
 ## Clinic Map {-}
 ```{r, fig.height=7, fig.width=7, echo=FALSE, message=FALSE, warning=FALSE, layout="l-body-outset"}
 
-bins <- BAMMtools::getJenksBreaks(wic_eligDallas_sf$elig_185, k = 6)
-pal <- colorBin("BuPu", domain = wic_eligDallas_sf$elig_185, bins = bins)
+bins <- BAMMtools::getJenksBreaks(wic_eligDallas_sf$wic_eligibleE, k = 6)
+pal <- colorBin("BuPu", domain = wic_eligDallas_sf$wic_eligibleE, bins = bins)
 
 leaflet() %>%
   setView(lng = -96.7970, lat = 32.7767, zoom = 10) %>%
   addTiles(urlTemplate = cpal_mapbox, attribution = cpal_leaflet) %>%
   addPolygons(data = wic_eligDallas_sf,
               fillOpacity = 0.8,
-              fillColor = ~pal(elig_185),
+              fillColor = ~pal(wic_eligibleE),
               color = "#FFFFFF",
               weight = 1) %>%
   addPolygons(data = highways,
