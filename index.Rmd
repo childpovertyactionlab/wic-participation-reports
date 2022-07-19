@@ -36,7 +36,8 @@ WIC_LA7 <- WIC_Participation %>%
 
 la7participation <- import("data/LA7 Monthly Clinic Participation Report Long.csv") %>%
   janitor::clean_names() %>%
-  mutate(ClinicNo = as.character(clinic_no)) %>%
+  mutate(ClinicNo = as.character(clinic_no),
+         date = as.Date(date, "%m/%d/%Y")) %>%
   select(-clinic_no) %>%
   filter(date >= as.Date("2020-01-01"))
 
@@ -47,7 +48,7 @@ dallas_sf <- st_read("data/Dallas County Boundary.geojson") %>%
   st_transform(crs = 4326)
 
 wic_eligible_sf <- st_read("data/WIC Eligibility by Tract North Texas.geojson") %>%
-  st_transform(crs = "ESRI:102738")
+  st_transform(crs = 4326)
 
 wic_eligDallas_sf <- st_read("data/WIC Eligibility by Tract Dallas County.geojson") %>%
   st_transform(crs = 4326)
@@ -76,11 +77,11 @@ sumLast <- sum(LastMonth$LastMonth, na.rm = TRUE)
 clinics <- read_sheet(ss = "https://docs.google.com/spreadsheets/d/16Wf9AYXo-_RNyaQp9owWnWf4tzC2sdzezjsu0DqD9uQ", sheet = "LA7 Clinics") %>%
   filter(Status == "ACTIVE") %>%
   st_as_sf(coords = c(x = "lon", y = "lat"), crs = 4269) %>%
-    mutate(ClinicNo = as.character(ClinicNo))
+    mutate(ClinicNo = as.character(ClinicNo)) %>%
+  st_transform(crs = 4326)
 
 
 clinicbuffer <- clinics %>%
-  st_transform(crs = "ESRI:102738") %>%
   st_buffer(., dist = 15840) %>%
   GeoIntersect(., wic_eligible_sf) %>%
   group_by(Name, ClinicNo, Rent, SqFt, Address, City, ZIP) %>%
@@ -101,7 +102,9 @@ clinicbuffer <- clinics %>%
          permonth = round((ThisMonth-LastMonth)/sumOld*100, digits = 2)) %>%
   st_drop_geometry(.)
 
-clinicjoin <- left_join(clinics, clinicbuffer)
+clinicjoin <- clinics %>%
+  select(-Address, -City, -ZIP, -Name, -SqFt, -Rent, -WIC_eligible) %>%
+  left_join(., clinicbuffer)
 
 wic_eligible_sf <- wic_eligible_sf %>%
   st_transform(crs = 4326)
