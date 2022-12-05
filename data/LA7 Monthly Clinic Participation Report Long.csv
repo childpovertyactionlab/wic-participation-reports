@@ -57,19 +57,10 @@ site,site_name,date,participation
 1,MLK Center,2022-05-01,683
 1,MLK Center,2022-06-01,759
 1,MLK Center,2022-07-01,867
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
-1,MLK Center,,
+1,MLK Center,2022-08-01,924
+1,MLK Center,2022-09-01,984
+1,MLK Center,2022-10-01,1021
+1,MLK Center,2022-11-01,1056
 3,Westmoreland,2017-10-01,4578
 3,Westmoreland,2017-11-01,4462
 3,Westmoreland,2017-12-01,4385
@@ -128,19 +119,10 @@ site,site_name,date,participation
 3,Westmoreland,2022-05-01,4107
 3,Westmoreland,2022-06-01,4192
 3,Westmoreland,2022-07-01,4251
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
-3,Westmoreland,,
+3,Westmoreland,2022-08-01,4293
+3,Westmoreland,2022-09-01,4298
+3,Westmoreland,2022-10-01,4335
+3,Westmoreland,2022-11-01,4379
 5,Lake June,2017-10-01,8103
 5,Lake June,2017-11-01,7959
 5,Lake June,2017-12-01,7813
@@ -199,19 +181,10 @@ site,site_name,date,participation
 5,Lake June,2022-05-01,8079
 5,Lake June,2022-06-01,8280
 5,Lake June,2022-07-01,8552
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
-5,Lake June,,
+5,Lake June,2022-08-01,8904
+5,Lake June,2022-09-01,9150
+5,Lake June,2022-10-01,9511
+5,Lake June,2022-11-01,9555
 7,Carrollton,2017-10-01,2890
 7,Carrollton,2017-11-01,2887
 7,Carrollton,2017-12-01,2837
@@ -270,19 +243,10 @@ site,site_name,date,participation
 7,Carrollton,2022-05-01,
 7,Carrollton,2022-06-01,
 7,Carrollton,2022-07-01,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
-7,Carrollton,,
+7,Carrollton,2022-08-01,4498
+7,Carrollton,2022-09-01,
+7,Carrollton,2022-10-01,
+7,Carrollton,2022-11-01,
 8,Grand Prairie,2017-10-01,4602
 8,Grand Prairie,2017-11-01,4526
 8,Grand Prairie,2017-12-01,4321
@@ -341,19 +305,10 @@ site,site_name,date,participation
 8,Grand Prairie,2022-05-01,4229
 8,Grand Prairie,2022-06-01,4379
 8,Grand Prairie,2022-07-01,4438
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
-8,Grand Prairie,,
+8,Grand Prairie,2022-08-01,4498
+8,Grand Prairie,2022-09-01,4461
+8,Grand Prairie,2022-10-01,4511
+8,Grand Prairie,2022-11-01,4512
 9,Irving,2017-10-01,7618
 9,Irving,2017-11-01,7557
 9,Irving,2017-12-01,7474
@@ -412,19 +367,10 @@ site,site_name,date,participation
 9,Irving,2022-05-01,8218
 9,Irving,2022-06-01,8447
 9,Irving,2022-07-01,8450
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
-9,Irving,,
+9,Irving,2022-08-01,8547
+9,Irving,2022-09-01,8546
+9,Irving,2022-10-01,8727
+9,Irving,2022-11-01,8782
 10,Highland Hills,2017-10-01,3064
 10,Highland Hills,2017-11-01,3006
 10,Highland Hills,2017-12-01,2902
@@ -483,19 +429,10 @@ site,site_name,date,participation
 10,Highland Hills,2022-05-01,143
 10,Highland Hills,2022-06-01,150
 10,Highland Hills,2022-07-01,152
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
-10,Highland Hills,,
+10,Highland Hills,2022-08-01,157
+10,Highland Hills,2022-09-01,163
+10,Highland Hills,2022-10-01,149
+10,Highland Hills,2022-11-01,136
 11,East Garland,2017-10-01,4614
 11,East Garland,2017-11-01,4566
 11,East Garland,2017-12-01,4488
@@ -554,19 +491,10 @@ site,site_name,date,participation
 11,East Garland,2022-05-01,4576
 11,East Garland,2022-06-01,4812
 11,East Garland,2022-07-01,4918
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
-11,East Garland,,
+11,East Garland,2022-08-01,5176
+11,East Garland,2022-09-01,5291
+11,East Garland,2022-10-01,5490
+11,East Garland,2022-11-01,5509
 17,Northwest Hwy,2017-10-01,3764
 17,Northwest Hwy,2017-11-01,3719
 17,Northwest Hwy,2017-12-01,3637
@@ -625,19 +553,10 @@ site,site_name,date,participation
 17,Northwest Hwy,2022-05-01,3320
 17,Northwest Hwy,2022-06-01,3329
 17,Northwest Hwy,2022-07-01,3376
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
-17,Northwest Hwy,,
+17,Northwest Hwy,2022-08-01,3542
+17,Northwest Hwy,2022-09-01,3617
+17,Northwest Hwy,2022-10-01,3680
+17,Northwest Hwy,2022-11-01,3719
 24,North Dallas,2017-10-01,6057
 24,North Dallas,2017-11-01,6004
 24,North Dallas,2017-12-01,5867
@@ -696,19 +615,10 @@ site,site_name,date,participation
 24,North Dallas,2022-05-01,6199
 24,North Dallas,2022-06-01,6299
 24,North Dallas,2022-07-01,6280
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
-24,North Dallas,,
+24,North Dallas,2022-08-01,6339
+24,North Dallas,2022-09-01,6381
+24,North Dallas,2022-10-01,6458
+24,North Dallas,2022-11-01,6544
 25,Ledbetter,2017-10-01,7887
 25,Ledbetter,2017-11-01,7713
 25,Ledbetter,2017-12-01,7517
@@ -767,19 +677,10 @@ site,site_name,date,participation
 25,Ledbetter,2022-05-01,7794
 25,Ledbetter,2022-06-01,7729
 25,Ledbetter,2022-07-01,7743
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
-25,Ledbetter,,
+25,Ledbetter,2022-08-01,7853
+25,Ledbetter,2022-09-01,7931
+25,Ledbetter,2022-10-01,8064
+25,Ledbetter,2022-11-01,8115
 26,John West/Buckner,2017-10-01,6616
 26,John West/Buckner,2017-11-01,6482
 26,John West/Buckner,2017-12-01,6339
@@ -838,19 +739,10 @@ site,site_name,date,participation
 26,John West/Buckner,2022-05-01,4907
 26,John West/Buckner,2022-06-01,5253
 26,John West/Buckner,2022-07-01,5755
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
-26,John West/Buckner,,
+26,John West/Buckner,2022-08-01,6281
+26,John West/Buckner,2022-09-01,6634
+26,John West/Buckner,2022-10-01,7020
+26,John West/Buckner,2022-11-01,7124
 30,Duncanville,2017-10-01,3466
 30,Duncanville,2017-11-01,3420
 30,Duncanville,2017-12-01,3384
@@ -909,19 +801,10 @@ site,site_name,date,participation
 30,Duncanville,2022-05-01,2792
 30,Duncanville,2022-06-01,2859
 30,Duncanville,2022-07-01,2966
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
-30,Duncanville,,
+30,Duncanville,2022-08-01,3070
+30,Duncanville,2022-09-01,3094
+30,Duncanville,2022-10-01,3067
+30,Duncanville,2022-11-01,3078
 32,West Garland,2017-10-01,5409
 32,West Garland,2017-11-01,5323
 32,West Garland,2017-12-01,5225
@@ -980,19 +863,10 @@ site,site_name,date,participation
 32,West Garland,2022-05-01,4441
 32,West Garland,2022-06-01,4369
 32,West Garland,2022-07-01,4150
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
-32,West Garland,,
+32,West Garland,2022-08-01,4030
+32,West Garland,2022-09-01,4072
+32,West Garland,2022-10-01,4129
+32,West Garland,2022-11-01,4192
 34,Stemmons Clinic,2017-10-01,57
 34,Stemmons Clinic,2017-11-01,18
 34,Stemmons Clinic,2017-12-01,1
@@ -1051,19 +925,10 @@ site,site_name,date,participation
 34,Stemmons Clinic,2022-05-01,
 34,Stemmons Clinic,2022-06-01,
 34,Stemmons Clinic,2022-07-01,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
-34,Stemmons Clinic,,
+34,Stemmons Clinic,2022-08-01,
+34,Stemmons Clinic,2022-09-01,
+34,Stemmons Clinic,2022-10-01,
+34,Stemmons Clinic,2022-11-01,
 37,Abrams Road,2017-10-01,4371
 37,Abrams Road,2017-11-01,4360
 37,Abrams Road,2017-12-01,4274
@@ -1122,19 +987,10 @@ site,site_name,date,participation
 37,Abrams Road,2022-05-01,3979
 37,Abrams Road,2022-06-01,4064
 37,Abrams Road,2022-07-01,4122
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
-37,Abrams Road,,
+37,Abrams Road,2022-08-01,4178
+37,Abrams Road,2022-09-01,4254
+37,Abrams Road,2022-10-01,4217
+37,Abrams Road,2022-11-01,4278
 39,Mesquite,2017-10-01,3921
 39,Mesquite,2017-11-01,3910
 39,Mesquite,2017-12-01,3862
@@ -1193,19 +1049,10 @@ site,site_name,date,participation
 39,Mesquite,2022-05-01,3181
 39,Mesquite,2022-06-01,2953
 39,Mesquite,2022-07-01,2159
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
-39,Mesquite,,
+39,Mesquite,2022-08-01,1294
+39,Mesquite,2022-09-01,676
+39,Mesquite,2022-10-01,67
+39,Mesquite,2022-11-01,
 34,Medical District,2017-10-01,
 34,Medical District,2017-11-01,
 34,Medical District,2017-12-01,
@@ -1264,19 +1111,10 @@ site,site_name,date,participation
 34,Medical District,2022-05-01,155
 34,Medical District,2022-06-01,141
 34,Medical District,2022-07-01,138
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
-34,Medical District,,
+34,Medical District,2022-08-01,147
+34,Medical District,2022-09-01,132
+34,Medical District,2022-10-01,129
+34,Medical District,2022-11-01,130
 ,"",2017-10-01,
 ,"",2017-11-01,
 ,"",2017-12-01,
@@ -1335,16 +1173,7 @@ site,site_name,date,participation
 ,"",2022-05-01,
 ,"",2022-06-01,
 ,"",2022-07-01,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
-,"",,
+,"",2022-08-01,
+,"",2022-09-01,
+,"",2022-10-01,
+,"",2022-11-01,
